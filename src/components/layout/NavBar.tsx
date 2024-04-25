@@ -21,9 +21,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="max-w-[1140px] mx-auto mt-7 flex items-center lg:gap-x-32 max-lg:justify-between">
-      <div className="flex items-center ml-0 gap-24">
-        <Link className="" href="/">
+    <nav className="max-w-[1140px] mx-auto mt-7  flex items-center lg:gap-x-8 max-lg:justify-between">
+      <div className="flex items-center gap-24">
+        <Link href="/">
           <Logo />
         </Link>
 
@@ -40,7 +40,7 @@ const NavBar = () => {
           ))}
         </div>
       </div>
-      <div className="hidden lg:flex -mt-2 gap-2 ml-36 max-lg:flex-col max-lg:gap-9">
+      <div className="hidden lg:flex -mt-1 gap-2 ml-44 max-lg:flex-col max-lg:gap-9">
         <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">

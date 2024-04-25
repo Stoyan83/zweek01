@@ -8,7 +8,7 @@ export default function Button({ children, className, primary, secondary, onClic
 
     return (
       <button
-        className={`${className} h-8 rounded  border-[1px] text-xs font-bold whitespace-nowrap ${classes}`}
+        className={`${className} rounded border-[1px] font-bold whitespace-nowrap ${classes}`}
         onClick={onClick}
         {...props}
       >
