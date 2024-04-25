@@ -33,24 +33,7 @@ const ProductHome = () => {
               Full access. No credit card required.
             </p>
           </form>
-          <div className="max-w-[1180px] mt-32 mb-[88px] gap-20 flex flex-wrap justify-start items-center  max-sm:mt-0">
-            <p className="text-base font-medium tracking-[-0.22px]">
-              Trusted by 1,000+ customers
-            </p>
-            <Image src="/Google.png" className="ml-6 mr-7" alt="google" width={98} height={40} />
-            <Image
-              src="/Atlassian.png"
-              alt="atlassian"
-              width={98}
-              height={40}
-            />
-            <Image src="/Canon.png" className="-ml-2" alt="canon" width={98} height={40} />
-            <Image src="/Walmart.png" className="-ml-6" alt="walmart" width={105} height={40} />
-            <Image src="/Amazon.png" alt="amazon" width={98} height={20} />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[152px] -right-[90px] max-xl:static max-xl:self-center max-sm:mt-16">
+          <div className="absolute top-[94px] -right-[242px] max-xl:static max-xl:self-center max-sm:mt-16">
         <Image
           src="/home-product.png"
           alt="charts"
@@ -59,6 +42,23 @@ const ProductHome = () => {
           layout="fixed"
           decoding="async"
         />
+      </div>
+          <div className="max-w-[1180px] mt-32 mb-[88px] gap-20 flex flex-wrap justify-start items-center  max-sm:mt-0">
+            <p className="text-base max-sm:mt-20 max-sm:px-16 font-medium tracking-[-0.22px]">
+              Trusted by 1,000+ customers
+            </p>
+            <Image src="/Google.png" className="max-sm:mx-4 max-sm:ml-8 max-sm:-mr-3 ml-6 mr-7" alt="google" width={98} height={40} />
+            <Image
+              src="/Atlassian.png"
+              alt="atlassian"
+              width={98}
+              height={40}
+            />
+            <Image src="/Canon.png" className="max-sm:mx-4 max-sm:ml-8 -ml-2" alt="canon" width={98} height={40} />
+            <Image src="/Walmart.png" className="-ml-6" alt="walmart" width={105} height={40} />
+            <Image src="/Amazon.png" className=" max-sm:mx-32" alt="amazon" width={98} height={20} />
+          </div>
+        </div>
       </div>
     </>
   );

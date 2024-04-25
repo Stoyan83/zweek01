@@ -1,4 +1,6 @@
 "use client";
+// NavBar.js
+
 import { useState } from "react";
 import Logo from "../ui/Logo";
 import { NavLink } from "../ui/NavLink";
@@ -21,9 +23,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="max-w-[1140px] mx-auto mt-7  flex items-center lg:gap-x-8 max-lg:justify-between">
+    <nav className="max-w-[1140px] mx-auto mt-7  flex items-center lg:gap-x-8 max-lg:justify-between relative z-10">
       <div className="flex items-center gap-24">
-        <Link href="/">
+        <Link className="max-sm:ml-4" href="/">
           <Logo />
         </Link>
 
@@ -44,7 +46,7 @@ const NavBar = () => {
         <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
-        <button onClick={toggleMenu} className="block mr-4 text-black">
+        <button onClick={toggleMenu} className="block max-sm:mr-8 mr-20 text-black">
           <svg
             className="h-6 w-6"
             fill="none"
@@ -70,7 +72,7 @@ const NavBar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-14 left-0 bg-white h-screen w-full p-4 lg:hidden flex flex-col">
+        <div className="absolute top-6 left-0 bg-white h-screen w-full p-4 lg:hidden flex flex-col">
           {links.map((link) => (
             <div key={link.id} className="mb-2">
               <NavLink
