@@ -1,6 +1,4 @@
 "use client";
-// NavBar.js
-
 import { useState } from "react";
 import Logo from "../ui/Logo";
 import { NavLink } from "../ui/NavLink";
@@ -21,6 +19,12 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen((prevState) => !prevState);
   };
+
+  if (isOpen) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
 
   return (
     <nav className="max-w-[1140px] mx-auto mt-7  flex items-center lg:gap-x-8 max-lg:justify-between relative z-10">
