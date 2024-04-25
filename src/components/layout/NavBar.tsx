@@ -2,6 +2,7 @@ import Logo from "../ui/Logo";
 import { NavLink } from "../ui/NavLink";
 import Link from "next/link";
 import Button from "../ui/Button";
+import LogIn from "./LogIn";
 
 const links = [
   { id: 1, href: "/", text: "Product" },
@@ -35,13 +36,8 @@ const NavBar = () => {
           ))}
         </div>
       </div>
-      <div className="flex -mb-1 gap-3 max-lg:flex-col max-lg:gap-9">
-        <Button secondary className="max-lg:text-xl max-lg:h-11 whitespace-nowrap">
-          Log In
-        </Button>
-        <Button primary className="max-lg:text-xl max-lg:h-11 whitespace-nowrap">
-          Try for Free
-        </Button>
+      <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3">
+        <LogIn />
       </div>
     </nav>
   );
