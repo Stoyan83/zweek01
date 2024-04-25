@@ -11,7 +11,7 @@ const LogIn = ({ isOpen }: any) => {
       </Button>
       <Button
         primary
-        className={`lg:text-xs max-sm:ml-0 py-1 pl-5 pr-6 ml-6 ${isOpen ? "max-w-24 text-xs ml-0 mt-4 flex justify-center items-center" : ""}`} // Adjusted width of the button
+        className={`lg:text-xs max-sm:ml-0 py-1 pl-5 pr-6 ml-6 ${isOpen ? "max-w-24 text-sm ml-0 mt-4 flex justify-center items-center" : ""}`} // Adjusted width of the button
       >
         Try for Free
       </Button>

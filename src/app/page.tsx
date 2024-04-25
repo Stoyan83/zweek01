@@ -8,6 +8,9 @@ export default function Home() {
       <Section>
         <ProductHome />
       </Section>
+      <Section className="bg-primary">
+        <h1>Roooby</h1>
+      </Section>
     </Main>
   );
 }
