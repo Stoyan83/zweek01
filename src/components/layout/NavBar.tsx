@@ -1,7 +1,8 @@
+"use client";
+import { useState } from "react";
 import Logo from "../ui/Logo";
 import { NavLink } from "../ui/NavLink";
 import Link from "next/link";
-import Button from "../ui/Button";
 import LogIn from "./LogIn";
 
 const links = [
@@ -13,17 +14,23 @@ const links = [
 ];
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="container flex justify-between items-center mt-7">
-      <div className="flex items-center ml-36 gap-28">
+      <div className="flex items-center ml-5 lg:ml-36 gap-28">
         <Link
-          className=" text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
+          className="lg:mb-0 lg:mt-0"
           href="/"
         >
           <Logo />
         </Link>
 
-        <div className="flex items-center">
+        <div className="hidden lg:flex items-center">
           {links.map((link) => (
             <NavLink
               key={link.id}
@@ -36,9 +43,53 @@ const NavBar = () => {
           ))}
         </div>
       </div>
-      <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3">
+      <div className="hidden lg:flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3">
         <LogIn />
       </div>
+      <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
+        <button
+          onClick={toggleMenu}
+          className="block mr-4 text-black"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {isOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+      </div>
+      {isOpen && (
+        <div className="absolute top-14 left-0 bg-white h-screen w-full p-4 lg:hidden">
+          {links.map((link) => (
+            <NavLink
+              key={link.id}
+              href={link.href}
+              className="block mr-4 text-black border-b-2 border-transparent hover:border-black text-sm ${link.style}"
+              exact
+            >
+              {link.text}
+            </NavLink>
+          ))}
+          <LogIn />
+        </div>
+      )}
     </nav>
   );
 };
