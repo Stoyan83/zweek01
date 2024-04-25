@@ -17,16 +17,13 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevState) => !prevState);
   };
 
   return (
     <nav className="container flex justify-between items-center mt-7">
       <div className="flex items-center ml-5 lg:ml-36 gap-28">
-        <Link
-          className="lg:mb-0 lg:mt-0"
-          href="/"
-        >
+        <Link className="lg:mb-0 lg:mt-0" href="/">
           <Logo />
         </Link>
 
@@ -44,13 +41,10 @@ const NavBar = () => {
         </div>
       </div>
       <div className="hidden lg:flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3">
-        <LogIn />
+        <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
-        <button
-          onClick={toggleMenu}
-          className="block mr-4 text-black"
-        >
+        <button onClick={toggleMenu} className="block mr-4 text-black">
           <svg
             className="h-6 w-6"
             fill="none"
@@ -76,18 +70,21 @@ const NavBar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-14 left-0 bg-white h-screen w-full p-4 lg:hidden">
+        <div className="absolute top-14 left-0 bg-white h-screen w-full p-4 lg:hidden flex flex-col">
           {links.map((link) => (
-            <NavLink
-              key={link.id}
-              href={link.href}
-              className="block mr-4 text-black border-b-2 border-transparent hover:border-black text-sm ${link.style}"
-              exact
-            >
-              {link.text}
-            </NavLink>
+            <div key={link.id} className="mb-2">
+              <NavLink
+                key={link.id}
+                href={link.href}
+                className="inline-block mr-4 text-black border-b-2 border-transparent hover:border-black text-sm"
+                exact
+                onClick={toggleMenu}
+              >
+                {link.text}
+              </NavLink>
+            </div>
           ))}
-          <LogIn />
+          <LogIn isOpen={isOpen} />
         </div>
       )}
     </nav>
