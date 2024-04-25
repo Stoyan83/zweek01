@@ -1,5 +1,13 @@
-import NavBar from "@/components/layout/NavBar";
+import ProductHome from "@/components/layout/ProductHome";
+import Main from "@/components/ui/Main";
+import Section from "@/components/ui/Section";
 
 export default function Home() {
-  return (<h1>Home</h1>);
+  return (
+    <Main>
+      <Section>
+        <ProductHome />
+      </Section>
+    </Main>
+  );
 }
