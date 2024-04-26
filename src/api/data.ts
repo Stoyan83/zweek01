@@ -25,7 +25,7 @@ export const items = [
 export const services = [
   {
     id: 1,
-    tag: 'sales',
+    tag: 'SALES',
     title: 'Increase company revenue up to 65%',
     image: "/service1.svg",
     text: {
@@ -39,30 +39,74 @@ export const services = [
   },
   {
     id: 2,
-    tag: 'marketing',
+    tag: 'MARKETING',
     title: 'Marketing',
     image: "/service2.svg",
     text: {
       paragraph: "Market like the most successful companies in the world with Agile CRM's marketing automation software.",
       bullets: [
-        { id: 4, text: 'Resolve every issue in the shortest possible time with powerful ticketing features' },
-        { id: 5, text: 'Categorize tickets according to the issue and route them to the appropriate group (e.g. sales or support)' },
-        { id: 6, text: 'Enjoy at-a-glance views of important data—such as ticket priority—on your dashboard' },
+        { id: 4, text: 'Marketing workflows with an easy drag-and-drop designer' },
+        { id: 5, text: 'Use our templates to create high converting, mobile responsive landing pages' },
+        { id: 6, text: 'Integrate social media easily into your marketing campaigns & contact views' },
       ],
     },
   },
   {
     id: 3,
-    tag: 'service',
+    tag: 'SERVICE',
     title: 'Help Desk Software',
     image: "/service3.svg",
     text: {
       paragraph: 'Great customer support separates decent companies from excellent companies. A positive customer support experience is a crucially important piece of the customer journey. ',
       bullets: [
-        { id: 7, text: 'Close more deals with single-page contact management' },
-        { id: 8, text: 'Enjoy one-click calling, call scripts and voicemail automation' },
-        { id: 9, text: 'Track stages and milestones of your deals to keep the sales process on track' },
+        { id: 7, text: 'Resolve every issue in the shortest possible time with powerful ticketing features' },
+        { id: 8, text: 'Categorize tickets according to the issue and route them to the appropriate group (e.g. sales or support)' },
+        { id: 9, text: 'Enjoy at-a-glance views of important data—such as ticket priority—on your dashboard' },
       ],
     },
+  },
+];
+
+
+export const logoApps = [
+  {
+    id: 1,
+    image: "/app1.svg"
+  },
+  {
+    id: 2,
+    image: "/app2.svg"
+  },
+  {
+    id: 3,
+    image: "/app3.svg"
+  },
+  {
+    id: 4,
+    image: "/app4.svg"
+  },
+  {
+    id: 5,
+    image: "/app5.svg"
+  },
+  {
+    id: 6,
+    image: "/app6.svg"
+  },
+  {
+    id: 7,
+    image: "/app7.svg"
+  },
+  {
+    id: 8,
+    image: "/app8.svg"
+  },
+  {
+    id: 9,
+    image: "/app9.svg"
+  },
+  {
+    id: 10,
+    image: "/app10.svg"
   },
 ];
