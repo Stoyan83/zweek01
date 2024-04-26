@@ -11,7 +11,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 body {
-  @apply min-w-[300px] bg-white;
+  @apply min-w-[300px] bg-darkWhite;
 }

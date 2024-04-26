@@ -1,4 +1,5 @@
-import ProductHome from "@/components/layout/ProductHome";
+import Benefits from "@/components/layout/product/Benefits";
+import ProductHome from "@/components/layout/product/ProductHome";
 import Main from "@/components/ui/Main";
 import Section from "@/components/ui/Section";
 
@@ -8,8 +9,8 @@ export default function Home() {
       <Section>
         <ProductHome />
       </Section>
-      <Section className="bg-primary">
-        <h1>Roooby</h1>
+      <Section fullWidth className="bg-primary text-white -mt-24">
+        <Benefits />
       </Section>
     </Main>
   );
