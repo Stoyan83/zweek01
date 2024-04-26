@@ -6,7 +6,7 @@ import NavBar from "@/components/layout/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Roooby',
+  title: "Roooby",
   description: "Learning Next.js",
 };
 
@@ -18,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <NavBar />
+        <header>
+          <NavBar />
+        </header>
         {children}
-        </body>
+      </body>
     </html>
   );
 }
