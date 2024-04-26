@@ -35,7 +35,7 @@ const ProductHome = () => {
           </form>
           <div className="absolute top-[94px] -right-[242px] max-xl:static max-xl:self-center max-sm:mt-16">
             <Image
-              src="/home-product.png"
+              src="/home-product.svg"
               alt="charts"
               width={695}
               height={470}
