@@ -1,6 +1,6 @@
 const Pricing = () => {
     return (
-      Pricing
+      <h1>Pricing</h1>
     );
   };
 

@@ -1,5 +1,5 @@
-import NavBar from "@/components/layout/NavBar";
+import Pricing from "@/components/layout/Pricing";
 
-export default function Pricing() {
-  return (<h1>Pricing</h1>);
+export default function PricingPage() {
+  return <Pricing />;
 }
