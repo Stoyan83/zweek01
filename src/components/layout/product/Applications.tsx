@@ -18,7 +18,7 @@ const Applications = () => {
             alt="app logo"
             width={0}
             height={0}
-            className="max-w-none w-max px-[43.4px] py-[24px] bg-white"
+            className="max-w-none w-max px-[2.69rem] py-[1.5rem] bg-white"
           />
         ))}
       </div>

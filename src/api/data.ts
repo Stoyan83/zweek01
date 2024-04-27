@@ -110,3 +110,23 @@ export const logoApps = [
     image: "/app10.svg"
   },
 ];
+
+
+export const news = [
+  {
+    id: 1,
+    tag: 'service',
+    title: 'How To Deliver a Successful Product Launch',
+    date: '2024-09-05',
+    publisher: 'Joshua Nash',
+    image: '/new1.png',
+  },
+  {
+    id: 1,
+    tag: 'service',
+    title: 'What Makes an Authentic Employee Profile, and Why Does It Matter?',
+    date: '2024-09-07',
+    publisher: 'Ivan Neshev',
+    image: '/new2.png',
+  },
+]
