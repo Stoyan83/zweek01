@@ -122,11 +122,32 @@ export const news = [
     image: '/new1.png',
   },
   {
-    id: 1,
+    id: 2,
     tag: 'service',
     title: 'What Makes an Authentic Employee Profile, and Why Does It Matter?',
     date: '2024-09-07',
     publisher: 'Ivan Neshev',
     image: '/new2.png',
   },
+]
+
+export const charts = [
+  {
+    id: 1,
+    percent: "$2.5 M",
+    title: "Generate sales",
+    description: "Using Кирилица CRM is one of the best decisions we’ve ever made. We’ve seen our annual revenue explode, and the outlook just keeps getting sunnier.",
+    name: "Nellie Foster",
+    role: "Founder & CEO, Foster Business Strategies",
+    image: '/customer1',
+  },
+  {
+    id: 2,
+    percent: "45%",
+    title: "Grew revenue",
+    description: "Yoora is created for sales people. It’s the kind of software that just works. I don’t have to try to make it work. It already does. It’s just perfect.",
+    name: "Lawrence Gibbs",
+    role: "Marketing Director",
+    image: '/customer2',
+  }
 ]
