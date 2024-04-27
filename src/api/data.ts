@@ -139,7 +139,7 @@ export const charts = [
     description: "Using Кирилица CRM is one of the best decisions we’ve ever made. We’ve seen our annual revenue explode, and the outlook just keeps getting sunnier.",
     name: "Nellie Foster",
     role: "Founder & CEO, Foster Business Strategies",
-    image: '/customer1',
+    image: '/chart1.png',
   },
   {
     id: 2,
@@ -148,6 +148,6 @@ export const charts = [
     description: "Yoora is created for sales people. It’s the kind of software that just works. I don’t have to try to make it work. It already does. It’s just perfect.",
     name: "Lawrence Gibbs",
     role: "Marketing Director",
-    image: '/customer2',
+    image: '/chart2.png',
   }
 ]
