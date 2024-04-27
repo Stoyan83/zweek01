@@ -7,7 +7,7 @@ interface Bullet {
 
 const Service = ({ item }: { item: any }) => (
   <div key={item.id} className={`flex justify-between items-center pt-[3.125rem] border-t-[0.0625rem] border-placeholder_grey max-lg:flex-col max-lg:gap-2.5rem ${item.id === 2 ? 'lg:flex-row-reverse' : ''}`}>
-    <div className={`max-w-[30.625rem] ${item.id === 3 ? 'pt-[3.5rem]' : ''}`}>
+    <div className={`max-w-[30.625rem] ${item.id === 3 ? 'pt-[3.8rem]' : ''}`}>
       <div className="px-2 py-[0.375rem] inline-block text-sm font-bold bg-benefit_yellow tracking-[0.875px] uppercase rounded ">
         {item.tag}
       </div>
@@ -26,7 +26,7 @@ const Service = ({ item }: { item: any }) => (
         ))}
       </ul>
     </div>
-    <div className={`relative -mt-2`}>
+    <div className={`relative -mt-2 max-sm:mt-12`}>
       <Image
         src={item.image}
         alt={item.tag}

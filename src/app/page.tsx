@@ -1,3 +1,4 @@
+import Applications from "@/components/layout/product/Applications";
 import Benefits from "@/components/layout/product/Benefits";
 import ProductHome from "@/components/layout/product/ProductHome";
 import Services from "@/components/layout/product/Services";
@@ -14,6 +15,9 @@ export default function Home() {
         <Benefits />
       </Section>
       <Services />
+      <Section>
+        <Applications/>
+      </Section>
     </Main>
   );
 }

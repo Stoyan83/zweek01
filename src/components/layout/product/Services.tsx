@@ -4,11 +4,19 @@ import Service from "./Service";
 
 const Services = () => {
   return (
-    <Section fullWidth className="pb-[13rem] pt-[8.15rem] -mt-2 max-lg:py-[7.5rem] bg-white">
-    <div className="max-w-[73.75rem] mx-auto px-5 space-y-[7.5rem] max-lg:space-y-[3.75rem]">
-      {services.map((item) => <Service key={item.id} item={item} />)}
-    </div>
-  </Section>
+    <>
+      {services.map((item, index) => (
+        <Section
+          key={index}
+          fullWidth
+          className={`pt-[8.1rem] -mt-2 max-lg:py-[7.5rem] bg-white ${index === 2 ? 'pt-[8rem] pb-[7.35rem]' : 'pb-[-1.5rem] '}`}
+        >
+          <div className="max-w-[73.75rem] mx-auto px-5 space-y-[7.5rem] max-lg:space-y-[3.75rem]">
+            <Service item={item} />
+          </div>
+        </Section>
+      ))}
+    </>
   );
 };
 
