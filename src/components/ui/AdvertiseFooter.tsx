@@ -6,7 +6,7 @@ const AdvertiseFooter = () => {
   return (
     <div className="relative mt-[9.2rem] text-white flex flex-col items-center">
       <div className="max-w-[1180px] mx-auto px-5 flex flex-col justify-between items-start pt-[120px] pb-[117px] max-lg:py-[60px] max-lg:flex-col max-lg:text-center">
-        <h2 className="max-w-[770px] text-left text-[64px] font-bold tracking-[-0.89px] leading-[1.1563] max-lg:text-[40px]">
+        <h2 className="max-w-[770px] lg:text-left text-[64px] font-bold tracking-[-0.89px] leading-[1.1563] max-lg:text-[40px]">
           Ready to supercharge your business?
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 w-full max-w-[1180px]">

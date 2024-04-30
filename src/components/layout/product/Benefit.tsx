@@ -15,7 +15,7 @@ const Benefit = ({ id, title, description, icon }: BenefitProps) => {
           <Image height={84} src={icon} alt={title} width={74} />
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-10">
         <div className={`h-[1px] mt-${id === 1 ? '[37px]' : id === 3 ? '[46px]' : '[62px]'} bg-white group-hover:bg-black`}></div>
         <h3 className={`mt-4 ${id === 1 ? 'mr-32' : ''} text-xl font-bold tracking-[0.38px]`}>{title}</h3>
         <p className={`mt-4 pb-${id === 1 ? '6' : id === 3 ? '12' : '4'} ${id === 1 ? 'mr-[55px]' : 'mr-12'} leading-[26px]`}>{description}</p>
