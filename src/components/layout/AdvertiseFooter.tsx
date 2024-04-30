@@ -32,7 +32,7 @@ const AdvertiseFooter = () => {
       <Image
         src="/background.png"
         alt="background image"
-        className="absolute z-[-1] top-0 left-0 w-full h-full object-cover"
+        className="absolute z-[-100] top-0 left-0 w-full h-full object-cover"
         width={1000}
         height={580}
       />
