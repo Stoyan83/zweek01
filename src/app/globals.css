@@ -12,5 +12,5 @@
 }
 
 body {
-  @apply min-w-[300px] bg-darkWhite;
+  @apply min-w-[340px] bg-darkWhite;
 }

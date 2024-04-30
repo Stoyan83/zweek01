@@ -76,7 +76,7 @@ const NavBar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-6 left-0 bg-white h-screen w-full p-4 lg:hidden flex flex-col">
+        <div className="absolute top-6 left-0 bg-darkWhite h-screen w-full p-4 lg:hidden flex flex-col">
           {links.map((link) => (
             <div key={link.id} className="mb-2">
               <NavLink

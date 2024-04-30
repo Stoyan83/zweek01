@@ -1,7 +1,6 @@
 'use client';
 import { useState } from "react";
 import Link from "next/link";
-import Logo from "../ui/Logo";
 import Image from "next/image";
 
 const links = [
@@ -25,7 +24,7 @@ const links = [
     links: [
       "Partner Program",
       "Get our newsletter",
-      "Sales Pipiline",
+      "Sales Pipeline",
       "What is CRM?",
       "CRM Comparison",
       "Resources",
@@ -47,15 +46,15 @@ const Footer = () => {
   return (
     <div className="pt-20 bg-white">
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6">
-        <div className="flex flex-wrap justify-between">
-          <div>
-            <Logo />
-            <p className="pt-6 max-w-[263px] leading-6 text-sm">
+        <div className="flex flex-col lg:flex-row lg:justify-between max-lg:items-center">
+          <div className="w-full lg:w-auto max-w-[263px] max-sm:pb-6  sm:pb-6 text-center lg:text-left lg:mb-8">
+            <p className="text-2xl font-bold">Roooby</p>
+            <p className="pt-6 leading-6 text-sm">
               We built an elegant solution.
               <br /> Our team created a fully integrated sales and marketing
               solution for SMBs
             </p>
-            <div className="pt-4 flex flex-row gap-4">
+            <div className="pt-4 flex justify-center lg:justify-start flex-row gap-4">
               <Image
                 src="/twitter.png"
                 alt="twitter"
@@ -64,7 +63,7 @@ const Footer = () => {
               ></Image>
               <Image
                 src="/facebook.png"
-                alt="faceboo"
+                alt="facebook"
                 width={24}
                 height={24}
               ></Image>
@@ -77,11 +76,11 @@ const Footer = () => {
             </div>
           </div>
           {links.map((section, index) => (
-            <div key={index} className="w-full sm:w-auto gap-2 mb-4 sm:mb-0">
-              <h2 className="text-base font-extrabold">{section.name}</h2>
+            <div key={index} className="w-full lg:w-auto mb-4 lg:mb-0">
+              <h2 className="text-base font-extrabold text-center lg:text-left">{section.name}</h2>
               <ul className="mt-4">
                 {section.links.map((link, i) => (
-                  <li key={i} className="mb-2">
+                  <li key={i} className="text-center lg:text-left mb-2">
                     <Link
                       href={`${link}`}
                       className="text-sm tracking-[0.2px] hover:text-gray-300"
@@ -97,12 +96,12 @@ const Footer = () => {
       </div>
       <div className="mt-28 max-w-[1440px] mx-auto h-[1px] bg-placeholder_grey"></div>
 
-      <div className="max-w-[1180px] mx-auto px-5 pt-[40px] pb-[60px] flex justify-between items-center max-[800px]:flex-col max-[800px]:gap-[50px]">
-        <p className="text-sm pr-40 text-customGray tracking-[0.2px]">
+      <div className="max-w-[1180px] mx-auto px-5 pt-[40px] pb-[60px] flex justify-between items-center flex-wrap">
+        <p className="text-sm lg:pr-40 text-customGray tracking-[0.2px] mb-4 lg:mb-0">
           &copy; Copyright 2024
         </p>
 
-        <ul className="flex gap-[40px] mr-4 text-sm tracking-[0.2px] max-[800px]:flex-col max-[800px]:text-center max-[800px]:gap-[20px]">
+        <ul className="flex gap-4 lg:gap-20 text-sm tracking-[0.2px] mb-4 lg:mb-0">
           <li>
             <Link href="/terms">Terms of Service</Link>
           </li>
@@ -114,8 +113,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <div className="flex items-center"></div>
-        <div className="flex">
+        <div className="flex items-center">
           <Image
             src="/language.svg"
             alt="language"

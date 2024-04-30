@@ -16,8 +16,8 @@ const ClientsFeedback = () => {
 
       <div className="-mt-12 flex justify-center gap-x-[30px] gap-y-[50px] flex-wrap">
         {feedback.map((client) => (
-          <div key={client.id} className="max-w-[360px] w-full">
-            <div className="flex flex-col w-full h-full max-w-[360px]">
+          <div key={client.id} className="max-w-[360px] max-sm:px-5 w-full">
+            <div className="flex flex-col w-full h-full  max-w-[360px]">
               <Image
                 src={"/quotes.svg"}
                 alt="quotes"
