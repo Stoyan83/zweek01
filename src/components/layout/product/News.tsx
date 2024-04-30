@@ -1,6 +1,7 @@
 import { news } from "@/api/data";
 import Link from "next/link";
 import Image from "next/image";
+import NextLink from "@/components/ui/NextLink";
 
 const News = () => {
   return (
@@ -10,12 +11,7 @@ const News = () => {
           <h2 className="text-[4rem] font-bold tracking-[-0.89px] leading-snug max-lg:text-[2.5rem] max-lg:text-center">
             What&apos;s new at Roooby?
           </h2>
-          <Link
-            href="/blog"
-            className="text-xl font-medium tracking-[0.43px] lg:self-end"
-          >
-            See all <span className="text-news_green">&gt;</span>
-          </Link>
+          <NextLink href="/blog">See all</NextLink>
         </div>
         <div className="mt-[4.25rem] flex gap-y-12 gap-x-7 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
           {news.map((item) => (

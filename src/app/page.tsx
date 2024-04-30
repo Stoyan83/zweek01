@@ -1,6 +1,7 @@
 import Applications from "@/components/layout/product/Applications";
 import Benefits from "@/components/layout/product/Benefits";
 import Charts from "@/components/layout/product/Charts";
+import ClientsFeedback from "@/components/layout/product/ClientsFeedback";
 import News from "@/components/layout/product/News";
 import ProductHome from "@/components/layout/product/ProductHome";
 import Services from "@/components/layout/product/Services";
@@ -25,6 +26,9 @@ export default function Home() {
       </Section>
       <Section fullWidth className="bg-white">
         <Charts/>
+      </Section>
+      <Section fullWidth>
+        <ClientsFeedback/>
       </Section>
     </Main>
   );

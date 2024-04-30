@@ -151,3 +151,27 @@ export const charts = [
     image: '/chart2.png',
   }
 ]
+
+export const feedback = [
+  {
+    id: 1,
+    comment: "The best thing we love about Yoora is it does two-way sync with Google Apps. It has helped us to better organize and keep everything on track.",
+    name: "Lola Ross",
+    role: "Marketing Director",
+    image: '/client1.png',
+  },
+  {
+    id: 2,
+    comment: "It has made our sales department more effective and efficient. It’s easy to use and it’s constantly updated. It’s easy to use and it’s constantly updated.",
+    name: "Daisy Phelps",
+    role: "Speaker and Author, Lifeiseasy",
+    image: '/client2.png',
+  },
+  {
+    id: 3,
+    comment: "Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!",
+    name: "Andrew Wilkins",
+    role: "Managing Director, Nirma Studio",
+    image: '/client3.png',
+  },
+]
