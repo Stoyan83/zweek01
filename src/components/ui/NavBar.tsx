@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Logo from "../ui/Logo";
-import { NavLink } from "../ui/NavLink";
+import Logo from "./Logo";
+import { NavLink } from "./NavLink";
 import Link from "next/link";
 import LogIn from "./LogIn";
 
@@ -50,7 +50,10 @@ const NavBar = () => {
         <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
-        <button onClick={toggleMenu} className="block max-sm:mr-8 mr-20 text-black">
+        <button
+          onClick={toggleMenu}
+          className="block max-sm:mr-8 mr-20 text-black"
+        >
           <svg
             className="h-6 w-6"
             fill="none"

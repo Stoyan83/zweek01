@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Button from "../ui/Button";
-import RightArrowIcon from "../ui/icons/RightArrowIcon";
+import Button from "./Button";
+import RightArrowIcon from "./icons/RightArrowIcon";
 
 const AdvertiseFooter = () => {
   return (
