@@ -15,7 +15,7 @@ const AdvertiseFooter = () => {
             pricing, implementation, or anything else. Our highly trained reps
             are standing by, ready to help.
           </p>
-          <div className="flex flex-col items-end lg:items-center  lg:ml-56 lg:mt-[-94px]">
+          <div className="flex flex-col items-center lg:items-end lg:ml-auto lg:mt-0">
             <Button
               secondary
               className="h-16 font-bold text-lg px-8 rounded-lg flex items-center"
