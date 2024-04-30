@@ -1,3 +1,4 @@
+import AdvertiseFooter from "@/components/layout/AdvertiseFooter";
 import Applications from "@/components/layout/product/Applications";
 import Benefits from "@/components/layout/product/Benefits";
 import Charts from "@/components/layout/product/Charts";
@@ -19,16 +20,16 @@ export default function Home() {
       </Section>
       <Services />
       <Section>
-        <Applications/>
+        <Applications />
       </Section>
       <Section fullWidth className="bg-white">
-        <News/>
+        <News />
       </Section>
       <Section fullWidth className="bg-white">
-        <Charts/>
+        <Charts />
       </Section>
       <Section fullWidth>
-        <ClientsFeedback/>
+        <ClientsFeedback />
       </Section>
     </Main>
   );
