@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "./Logo";
 
 const links = [
   {
@@ -44,11 +45,11 @@ const Footer = () => {
   };
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-[7.5rem] bg-white">
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row lg:justify-between max-lg:items-center">
           <div className="w-full lg:w-auto max-w-[263px] max-sm:pb-6  sm:pb-6 text-center lg:text-left lg:mb-8">
-            <p className="text-2xl font-bold">Roooby</p>
+            <Logo className="max-sm:pl-[5.5rem] sm:pl-[5.5rem] lg:pl-0"/>
             <p className="pt-6 leading-6 text-sm">
               We built an elegant solution.
               <br /> Our team created a fully integrated sales and marketing

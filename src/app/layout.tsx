@@ -5,7 +5,6 @@ import NavBar from "@/components/ui/NavBar";
 import AdvertiseFooter from "@/components/ui/AdvertiseFooter";
 import Footer from "@/components/ui/Footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,11 +21,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <NavBar/>
+          <NavBar />
         </header>
         {children}
+        <footer>
           <AdvertiseFooter />
           <Footer />
+        </footer>
       </body>
     </html>
   );

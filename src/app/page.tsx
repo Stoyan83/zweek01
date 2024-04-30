@@ -1,4 +1,3 @@
-import AdvertiseFooter from "@/components/layout/AdvertiseFooter";
 import Applications from "@/components/layout/product/Applications";
 import Benefits from "@/components/layout/product/Benefits";
 import Charts from "@/components/layout/product/Charts";
