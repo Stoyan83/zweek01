@@ -1,18 +1,16 @@
 "use client";
 import { useState } from "react";
 import Section from "@/components/ui/Section";
-
-interface ShowTextBlocksState {
-  [key: number]: boolean;
-}
+import MinusIcon from "@/components/ui/icons/MinusIcon";
+import PlusIcon from "@/components/ui/icons/PlusIcon";
 
 interface TextContents {
   [key: number]: string;
 }
 
 const Questions = () => {
-  const [showTextBlocks, setShowTextBlocks] = useState<ShowTextBlocksState>({
-    1: true,
+  const [showTextBlocks, setShowTextBlocks] = useState<{[key: number]: boolean;}>({
+    1: false,
     2: false,
     3: false,
     4: false,
@@ -56,9 +54,7 @@ const Questions = () => {
                   <div className="border-t border-placeholder-grey w-full pt-28 pb-8">
                     {showTextBlocks[id] && (
                       <p
-                        className={`max-w-[860px] text-block text-lg pt-4 ${
-                          showTextBlocks[id] ? "" : ""
-                        }`}
+                        className={`max-w-[860px] text-block text-lg pt-4 `}
                       >
                         {textContents[id]}
                       </p>
@@ -69,19 +65,11 @@ const Questions = () => {
                       <h3 className="text-[32px] font-medium leading-[1.3125] tracking-[-0.44px]">
                         {titles[id]}
                       </h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 cursor-pointer"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
+                      {showTextBlocks[id] ? (
+                        <MinusIcon />
+                      ) : (
+                        <PlusIcon />
+                      )}
                     </div>
                   </div>
                 </div>
