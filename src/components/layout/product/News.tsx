@@ -16,10 +16,10 @@ const News = () => {
         <div className="mt-[4.25rem] flex gap-y-12 gap-x-7 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
           {news.map((item) => (
             <div key={item.id} className="max-w-[555px]">
-              <div className="text-sm font-bold uppercase tracking-[1.4px] text-placeholder_grey">
+              <div className="text-sm font-bold uppercase tracking-[1.4px] text-placeholder-grey">
                 {item.tag}
               </div>
-              <div className="mt-[14px] h-[1px] bg-placeholder_grey"></div>
+              <div className="mt-[14px] h-[1px] bg-placeholder-grey"></div>
               <Link href="/blog">
                 <div className="mt-[22px] hover:contrast-75">
                   <Image
@@ -34,7 +34,7 @@ const News = () => {
               <h3 className="text-[2rem] font-bold leading-snug tracking-[-0.44px] mt-[24px]">{item.title}</h3>
               <p className="mt-[1.19rem]">
                 <span className="text-base font-medium">{item.date}, </span>
-                <span className="text-lg font-medium text-placeholder_grey">
+                <span className="text-lg font-medium text-placeholder-grey">
                   by {item.publisher}
                 </span>
               </p>

@@ -17,7 +17,7 @@ const config: Config = {
         primary: "#150050",
         secondary: "#F4F4F4",
         darkWhite: "#F4F4F4",
-        placeholder_grey: "#787878",
+        "placeholder-grey": "#787878",
         benefit_yellow: "#FFE377",
         card_bg: "#200b58",
         news_green: "#00CC61",

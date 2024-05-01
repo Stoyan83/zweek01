@@ -101,7 +101,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="mt-28 max-w-[1440px] mx-auto h-[1px] bg-placeholder_grey"></div>
+      <div className="mt-28 max-w-[1440px] mx-auto h-[1px] bg-placeholder-grey"></div>
 
       <div className="max-w-[1180px] mx-auto px-5 pt-[40px] pb-[60px] flex justify-between items-center flex-wrap max-sm:flex-col">
         <p className="text-sm lg:pr-40 text-customGray tracking-[0.2px] mb-4 lg:mb-0">

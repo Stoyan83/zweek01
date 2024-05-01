@@ -25,7 +25,7 @@ const ClientsFeedback = () => {
                 height={44}
                 className="mb-8"
               ></Image>
-              <div className="bg-placeholder_grey h-[1px]"></div>
+              <div className="bg-placeholder-grey h-[1px]"></div>
               <div className="flex flex-col gap-8 w-full">
                 <p className="font-medium text-2xl mt-[22px] mb-[45px] tracking-[-0.33px] leading-[1.4167]">
                   {client.comment}

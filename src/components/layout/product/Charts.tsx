@@ -17,7 +17,7 @@ const Charts = () => {
           {charts.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col border-t lg:flex-row border-placeholder_grey pt-16 pb-8"
+              className="flex flex-col border-t lg:flex-row border-placeholder-grey pt-16 pb-8"
             >
               <div className={`lg:w-1/3`}>
                 <p className="text-7xl font-bold tracking-[-1px]  max-lg:text-[50px]">

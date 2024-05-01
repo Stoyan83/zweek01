@@ -18,7 +18,7 @@ const ProductHome = () => {
           <form className="mt-16 max-w-[457px] w-full relative">
             <div className="relative max-sm:px-2">
               <Input
-                className="placeholder:text-placeholder_grey border-white placeholder:text-lg placeholder:font-medium border-2 full w-full h-20 px-6 rounded-xl"
+                className="placeholder:text-placeholder-grey border-white placeholder:text-lg placeholder:font-medium border-2 full w-full h-20 px-6 rounded-xl"
                 type="text"
                 placeholder="Enter your email"
               />
