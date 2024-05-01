@@ -1,8 +1,18 @@
+"use client";
+import { useState } from 'react';
 import Button from "../../ui/Button";
 import Input from "../../ui/Input";
 import Image from "next/image";
 
+
 const ProductHome = () => {
+  const [email, setEmail] = useState('');
+
+  const handleButtonClick = (event: any) => {
+    event.preventDefault();
+    setEmail('');
+  };
+
   return (
     <>
       <div className="mx-auto object-cove ml-0 pt-24 pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
@@ -21,10 +31,13 @@ const ProductHome = () => {
                 className="placeholder:text-placeholder-grey border-white placeholder:text-lg placeholder:font-medium border-2 full w-full h-20 px-6 rounded-xl"
                 type="text"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e: any) => setEmail(e.target.value)}
               />
               <Button
                 primary
                 className="absolute text-lg inset-y-0 h-14 right-0 my-2 mr-2 px-5 font-bold rounded-lg"
+                onClick={handleButtonClick} 
               >
                 Try for Free
               </Button>
