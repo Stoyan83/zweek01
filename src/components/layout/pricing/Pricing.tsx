@@ -77,7 +77,7 @@ const Pricing = () => {
       </div>
       <div className="mt-[7.4rem] bg-placeholder-grey h-[1px]"></div>
 
-      <div className="mt-11 flex flex-col items-center lg:flex-row lg:justify-center lg:max-w-[1480px]">
+      <div className="mt-11 flex flex-col items-center lg:flex-row lg:justify-center lg:max-w-[1480px] lg:pb-28">
         <h3 className="text-[24px] lg:text-[32px] font-bold leading-[1.3125] tracking-[-0.44px] text-center lg:text-left">
           Need help choosing the right plan?
         </h3>
