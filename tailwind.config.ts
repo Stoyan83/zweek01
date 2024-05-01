@@ -20,9 +20,10 @@ const config: Config = {
         "placeholder-grey": "#787878",
         benefit_yellow: "#FFE377",
         card_bg: "#200b58",
-        news_green: "#00CC61",
+        "news-green": "#00CC61",
         customGray: "#404040",
-        "footer-text": "#B8CACE"
+        "footer-text": "#B8CACE",
+        "pricing-gray": "#777777"
       },
     },
   },
