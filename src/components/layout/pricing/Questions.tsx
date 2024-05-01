@@ -34,6 +34,14 @@ const Questions = () => {
     5: "Rooby CRM offers the most affordable, comprehensive platform to manage the entire customer journey, from generating leads, to closing deals and supporting your customers. With a full suite of CRM, sales enablement, marketing automation, and help desk/customer support capabilities, it’s all you need to manage the entire customer lifecycle. Most of our competitors offer one or two of these functions as separate products, leaving you with the headache of integrating them and increasing the overall price point.",
   };
 
+  const titles: TextContents = {
+    1: "How Does Roooby CRM Compare To The Competition?",
+    2: "Can I Change Plans Or Cancel My Subscription At Any Time?",
+    3: "How Secure Is My Data With Roooby CRM?",
+    4: "What Is The Uptime Guarantee?",
+    5: "How Can I Add More Emails To My Account?",
+  };
+
   return (
     <Section fullWidth className="bg-white">
       <div className="max-w-[73.75rem] mx-auto max-sm:py-5 px-5 pt-32 ">
@@ -59,7 +67,7 @@ const Questions = () => {
                   <div className="lg:w-[945px] absolute top-0 right-0">
                     <div className="flex justify-between pt-[3.8rem]">
                       <h3 className="text-[32px] font-medium leading-[1.3125] tracking-[-0.44px]">
-                        How Does Roooby CRM Compare To The Competition?
+                        {titles[id]}
                       </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
