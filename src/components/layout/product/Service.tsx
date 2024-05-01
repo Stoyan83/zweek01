@@ -20,7 +20,7 @@ const Service = ({ item }: { item: any }) => (
       <ul className="mt-5 space-y-4">
         {item.text.bullets.map((bullet: Bullet) => (
           <li key={bullet.id} className="flex gap-5">
-            <Image src="/shape.svg" alt="bullet shape" width={18}  height={18} className="mb-4" />
+            <Image src="/shape.svg" alt="bullet shape" width={18}  height={18} className="mb-4 w-auto h-auto" />
             <p className="text-lg tracking-[0.2px]">{bullet.text}</p>
           </li>
         ))}
