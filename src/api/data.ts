@@ -345,3 +345,12 @@ export const prices = [
     ],
   },
 ];
+
+
+export const logos = [
+  { src: "/Google.png", alt: "google", width: 97, height: 32 },
+  { src: "/Atlassian.png", alt: "atlassian", width: 135, height: 17 },
+  { src: "/Canon.png", alt: "canon", width: 95, height: 20 },
+  { src: "/Walmart.png", alt: "walmart", width: 129, height: 30 },
+  { src: "/Amazon.png", alt: "amazon", width: 95, height: 29 },
+];

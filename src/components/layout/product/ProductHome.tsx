@@ -3,6 +3,8 @@ import { useState } from "react";
 import Button from "../../ui/Button";
 import Input from "../../ui/Input";
 import Image from "next/image";
+import LogoBar from "@/components/ui/icons/LogoBar";
+import { logos } from "@/api/data";
 
 const ProductHome = () => {
   const [email, setEmail] = useState("");
@@ -55,48 +57,7 @@ const ProductHome = () => {
               className="lg:w-[690px] lg:h-[505px] max-sm:mt-24 max-sm:-mb-8"
             />
           </div>
-          <div className="max-w-[1180px] lg:mt-32 lg:mb-[88px] gap-20 flex flex-wrap justify-start items-center max-sm:pb-12">
-            <p className="text-base max-sm:mt-20 max-sm:pr-0 max-sm:pl-[4.7rem] font-medium tracking-[-0.22px]">
-              Trusted by 1,000+ customers
-            </p>
-            <Image
-              src="/Google.png"
-              className="max-sm:mx-4 max-sm:ml-12  max-sm:-mr-3 ml-6 lg:-mr-1 max-sm:w-[94px] w-[97px] h-[32px]"
-              alt="google"
-              width={97}
-              height={32}
-            />
-            <Image
-              src="/Atlassian.png"
-              alt="atlassian"
-              width={135}
-              height={17}
-              className="max-sm:w-[94px] w-[135px] h-[17px]"
-
-            />
-            <Image
-              src="/Canon.png"
-              className="max-sm:mx-4 max-sm:ml-12 lg:-ml-2 w-[95px] h-[20px] max-sm:w-[94px]"
-              alt="canon"
-              width={95}
-              height={20}
-
-            />
-            <Image
-              src="/Walmart.png"
-              className="lg:-ml-6 max-sm:-ml-6 w-[129px] h-[30px] max-sm:w-[94px]"
-              alt="walmart"
-              width={129}
-              height={30}
-            />
-            <Image
-              src="/Amazon.png"
-              className="max-sm:mx-32 max-sm:w-[94px] w-[95px] h-[29px] lg:-ml-5"
-              alt="amazon"
-              width={95}
-              height={29}
-            />
-          </div>
+          <LogoBar text="Trusted by 1,000+ customers" logos={logos} />
         </div>
       </div>
     </>
