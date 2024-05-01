@@ -175,3 +175,173 @@ export const feedback = [
     image: '/client3.png',
   },
 ]
+
+export const prices = [
+  {
+    id: 1,
+    title: "Starter",
+    offer: false,
+    description: "Get organized and set up simple sales processes lorem ipsum",
+    price: "$8,90",
+    period: "month",
+    button: {
+      text: "Try for Free",
+      type: "secondary",
+    },
+    trial: "Free 14-day trial. No credit card required.",
+    list: [
+      {
+        text: "2 team members",
+        inactive: false,
+      },
+      {
+        text: "1,000 Contacts & Companies",
+        inactive: false,
+      },
+      {
+        text: "5 Campaign Workflows",
+        inactive: false,
+      },
+      {
+        text: "10 Nodes Per Campaign",
+        inactive: false,
+      },
+      {
+        text: "5 Automation Rules (Triggers)",
+        inactive: false,
+      },
+      {
+        text: "3 Plugins/Integrations",
+        inactive: false,
+      },
+      {
+        text: "Marketing Automation",
+        inactive: true,
+      },
+      {
+        text: "Custom Deal Tracks",
+        inactive: true,
+      },
+      {
+        text: "Automated Voicemails",
+        inactive: true,
+      },
+      {
+        text: "Post-call Automation",
+        inactive: true,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Professional",
+    offer: true,
+    description:
+      "Everything you need to boost performance and revenue lorem ipsum",
+    price: "$29,90",
+    period: "month",
+    button: {
+      text: "Try for Free",
+      type: "primary",
+    },
+    trial: "Free 14-day trial. No credit card required.",
+    list: [
+      {
+        text: "10 team members",
+        inactive: false,
+      },
+      {
+        text: "2,500 Contacts & Companies",
+        inactive: false,
+      },
+      {
+        text: "5 Campaign Workflows",
+        inactive: false,
+      },
+      {
+        text: "10 Nodes Per Campaign",
+        inactive: false,
+      },
+      {
+        text: "5 Automation Rules (Triggers)",
+        inactive: false,
+      },
+      {
+        text: "3 Plugins/Integrations",
+        inactive: false,
+      },
+      {
+        text: "Marketing Automation",
+        inactive: false,
+      },
+      {
+        text: "Custom Deal Tracks",
+        inactive: false,
+      },
+      {
+        text: "Automated Voicemails",
+        inactive: true,
+      },
+      {
+        text: "Post-call Automation",
+        inactive: true,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Enterprise",
+    offer: false,
+    description:
+      "Customize without limits and access unrivaled support lorem ipsum",
+    price: "$39,90",
+    period: "month",
+    button: {
+      text: "Try for Free",
+      type: "secondary",
+    },
+    trial: "Free 14-day trial. No credit card required.",
+    list: [
+      {
+        text: "Unlimited team members",
+        inactive: false,
+      },
+      {
+        text: "5,000 Contacts & Companies",
+        inactive: false,
+      },
+      {
+        text: "25 Campaign Workflows",
+        inactive: false,
+      },
+      {
+        text: "20 Nodes Per Campaign",
+        inactive: false,
+      },
+      {
+        text: "15 Automation Rules (Triggers)",
+        inactive: false,
+      },
+      {
+        text: "10 Plugins/Integrations",
+        inactive: false,
+      },
+      {
+        text: "Marketing Automation	",
+        inactive: false,
+      },
+      {
+        text: "Custom Deal Tracks",
+        inactive: false,
+      },
+      {
+        text: "Automated Voicemails",
+        inactive: false,
+      },
+      {
+        text: "Post-call Automation",
+        inactive: false,
+      },
+    ],
+  },
+];

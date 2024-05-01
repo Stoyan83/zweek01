@@ -21,6 +21,7 @@ const config: Config = {
         benefit_yellow: "#FFE377",
         card_bg: "#200b58",
         "news-green": "#00CC61",
+        "green-bg": "#EBFBF3",
         customGray: "#404040",
         "footer-text": "#B8CACE",
         "pricing-gray": "#777777"
