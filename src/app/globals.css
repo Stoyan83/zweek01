@@ -14,3 +14,7 @@
 body {
   @apply min-w-[340px] bg-darkWhite;
 }
+
+header {
+  @apply sticky top-0 overflow-x-clip bg-darkWhite z-20;
+}

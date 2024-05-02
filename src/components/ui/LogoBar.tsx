@@ -13,7 +13,7 @@ const LogoBar = ({ text, logos }: any) => {
           alt={image.alt}
           width={image.width}
           height={image.height}
-          className={`max-sm:mx-4 max-sm:ml-1 max-sm:-mr-2 ${index === 0 ? 'max-sm:-mr-3 ml-6 lg:-mr-1' : ''} ${index === 1 ? 'max-sm:ml-0 lg:-mr-1' : ''} ${index === 2 ? 'lg:-ml-2 max-sm:mx-4 max-sm:ml-12' : ''} ${index === 3 ? 'lg:-ml-6 max-sm:-ml-6' : ''} ${index === 4 ? 'max-sm:mx-32 lg:-ml-5' : ''} max-sm:w-[94px] w-[${image.width}px] h-[${image.height}px]`}
+          className={`max-sm:mx-4 max-sm:ml-1 max-sm:-mr-2 ${index === 0 ? 'max-sm:-mr-3 ml-6 lg:-mr-1' : ''} ${index === 1 ? 'max-sm:ml-0 lg:-mr-1' : ''} ${index === 2 ? 'lg:-ml-2 max-sm:ml-1' : ''} ${index === 3 ? 'lg:-ml-6 max-sm:-ml-6' : ''} ${index === 4 ? 'max-sm:mx-32 lg:-ml-5' : ''} max-sm:w-[94px] w-[${image.width}px] h-[${image.height}px]`}
         />
       ))}
     </div>
