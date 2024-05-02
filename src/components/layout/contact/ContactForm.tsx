@@ -38,6 +38,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            required
           />
         </div>
 
@@ -50,18 +51,20 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </div>
 
         <div className="pt-5">
           <Input
             id="message"
-            className="font-medium text-xl  max-sm:h-[70px] max-sm:w-[300px] lg-pb-24 pl-6 tracking-[-0.29px] h-[190px] lg:w-[555px] "
+            className="font-medium text-xl  max-sm:h-[70px] max-sm:w-[300px] pb-32 pl-6 tracking-[-0.29px] h-[190px] lg:w-[555px] "
             type="text"
             placeholder="Message"
             name="message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
         </div>
       </div>

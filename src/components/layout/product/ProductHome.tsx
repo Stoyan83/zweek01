@@ -16,7 +16,7 @@ const ProductHome = () => {
 
   return (
     <>
-      <div className="mx-auto object-cover ml-0  max-sm:pt-5 max-sm:pb-20 lg:pt-24 lg:pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
+      <div className="mx-auto object-cover ml-0  max-sm:pt-5 max-sm:pb-20 lg:pt-16 lg:pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
         <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
           <h1 className="max-w-[642px] text-[64px] font-bold tracking-[-0.89px] leading-[74px] text-primary max-sm:text-[40px] max-sm:leading-[50px]">
             Bringing companies and customers together, anywhere
@@ -47,7 +47,7 @@ const ProductHome = () => {
               Full access. No credit card required.
             </p>
           </form>
-          <div className="absolute top-[94px] -right-[242px] max-xl:static max-xl:self-center max-sm:-mt-16 max-sm:px-5">
+          <div className="absolute top-[76px] -right-[242px] max-xl:static max-xl:self-center max-sm:-mt-16 max-sm:px-5">
             <Image
               src="/home-product.svg"
               alt="home"
@@ -57,7 +57,10 @@ const ProductHome = () => {
               className="lg:w-[690px] lg:h-[505px] max-sm:mt-24 max-sm:-mb-8"
             />
           </div>
+          <div className="pt-4">
+
           <LogoBar text="Trusted by 1,000+ customers" logos={logos} />
+          </div>
         </div>
       </div>
     </>

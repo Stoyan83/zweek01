@@ -47,7 +47,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="lg:pt-[7.5rem] max-sm:pt-5 bg-white">
+    <div className="lg:pt-[7.5rem] lg:-mt-10 max-sm:pt-5 bg-white">
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row lg:justify-between max-lg:items-center">
           <div className="lg:pr-10">
