@@ -6,7 +6,7 @@ import NextLink from "@/components/ui/NextLink";
 const News = () => {
   return (
     <>
-      <div className="pt-44 max-sm:pb-5 pb-28 max-w-[73.75rem] mx-auto px-5">
+      <div className="lg:pt-44 max-sm:py-5 lg:pb-28 max-w-[73.75rem] mx-auto px-5">
         <div className="flex justify-between max-lg:flex-col max-lg:items-center max-lg:gap-6">
           <h2 className="text-[4rem] font-bold tracking-[-0.89px] leading-snug max-lg:text-[2.5rem] max-lg:text-center">
             What&apos;s new at Roooby?

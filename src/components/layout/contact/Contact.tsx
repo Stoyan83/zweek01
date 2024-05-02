@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <Section fullWidth>
-      <div className="max-w-[1180px] max-sm:pt-5 lg:pt-[6.2rem]">
+      <div className="max-w-[1180px] max-sm:pt-5 lg:mb-28 lg:pt-[6.2rem]">
         <div className="flex flex-col justify-start lg:flex-row lg:justify-between">
           <div>
             <h1 className="lg:max-w-[555px] max-sm:px-5 max-sm:text-[40px] lg:text-[64px] tracking-[-0.89px] leading-[1.16] font-bold">

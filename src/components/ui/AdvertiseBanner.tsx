@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "./Button";
-import RightArrowIcon from "./icons/RightArrowIcon";
 
 const AdvertiseBanner = () => {
   return (
@@ -16,12 +15,8 @@ const AdvertiseBanner = () => {
             are standing by, ready to help.
           </p>
           <div className="flex flex-col lg:place-items-end items-center lg:mt-[-94px]">
-            <Button
-              secondary
-              className="h-16 font-bold text-lg px-8 rounded-lg flex items-center"
-            >
+            <Button white arrowIcon>
               Try for Free
-              <RightArrowIcon />
             </Button>
             <p className="text-white text-sm font-medium max-w-[570px] lg:mr-0 mt-3 lg:text-left">
               Full access. No credit card required.

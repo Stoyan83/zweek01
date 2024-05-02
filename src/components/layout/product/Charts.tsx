@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Charts = () => {
   return (
-    <div className="max-w-[73.75rem] pt-[8.8rem] pb-32 mx-auto px-5">
+    <div className="max-w-[73.75rem] lg:pt-[8.8rem] max-sm:pt-5 lg:pb-32 mx-auto px-5">
       <div className="flex flex-col gap-5">
         <div className="pb-8">
           <h2 className="text-5xl font-bold leading-tight tracking-[-0.67px] max-lg:text-[40px] max-lg:text-center">

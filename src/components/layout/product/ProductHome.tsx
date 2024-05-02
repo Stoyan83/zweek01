@@ -16,7 +16,7 @@ const ProductHome = () => {
 
   return (
     <>
-      <div className="mx-auto object-cover ml-0 pt-24 pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
+      <div className="mx-auto object-cover ml-0  max-sm:pt-5 max-sm:pb-20 lg:pt-24 lg:pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
         <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
           <h1 className="max-w-[642px] text-[64px] font-bold tracking-[-0.89px] leading-[74px] text-primary max-sm:text-[40px] max-sm:leading-[50px]">
             Bringing companies and customers together, anywhere
