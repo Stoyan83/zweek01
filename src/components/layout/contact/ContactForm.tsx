@@ -1,6 +1,8 @@
+import MapAddress from "./MapAddress";
+
 const ContactForm = () => {
     return (
-        <h2>Contact</h2>
+        <MapAddress />
     );
   };
 
