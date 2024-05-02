@@ -19,7 +19,7 @@ const LogIn = ({ isOpen }: any) => {
           isOpen
             ? "max-w-24 sm:ml-0 text-sm ml-0 mt-4 flex justify-center items-center"
             : ""
-        }`} // Adjusted width of the button
+        }`}
       >
         Try for Free
       </Button>

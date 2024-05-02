@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "../../ui/Button";
 import Input from "../../ui/Input";
 import Image from "next/image";
-import LogoBar from "@/components/ui/icons/LogoBar";
+import LogoBar from "@/components/ui/LogoBar";
 import { logos } from "@/api/data";
 
 const ProductHome = () => {
