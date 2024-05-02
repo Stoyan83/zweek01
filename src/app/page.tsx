@@ -5,6 +5,8 @@ import ClientsFeedback from "@/components/layout/product/ClientsFeedback";
 import News from "@/components/layout/product/News";
 import ProductHome from "@/components/layout/product/ProductHome";
 import Services from "@/components/layout/product/Services";
+import AdvertiseBanner from "@/components/ui/AdvertiseBanner";
+
 import Main from "@/components/ui/Main";
 import Section from "@/components/ui/Section";
 
@@ -30,6 +32,7 @@ export default function Home() {
       <Section fullWidth>
         <ClientsFeedback />
       </Section>
+      <AdvertiseBanner />
     </Main>
   );
 }
