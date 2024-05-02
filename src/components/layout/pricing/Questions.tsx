@@ -45,8 +45,8 @@ const questions: {[key: number]: { title: string; content: string }} = {
 
     return (
       <Section fullWidth className="bg-white">
-        <div className="max-w-[73.75rem] mx-auto max-sm:py-5 px-5 pt-32 ">
-          <h2 className="max-w-[594px] pb-0 -mt-2 leading-[1.2] tracking-[-0.89px] font-bold text-[3.9rem]">
+        <div className="max-w-[73.75rem] pb-40 mx-auto max-sm:py-5 px-5 pt-32 ">
+          <h2 className="max-w-[594px] pb-0 -mt-2 leading-[1.2] tracking-[-0.89px] font-bold max-sm:text-[2.6rem] text-[3.9rem]">
             Frequently asked questions
           </h2>
           <div className="-pt-16 mt-[4.5rem]">
@@ -57,7 +57,7 @@ const questions: {[key: number]: { title: string; content: string }} = {
                     <div className="border-t border-placeholder-grey w-full pt-28 pb-8">
                       {isClicked[id] && (
                         <p
-                          className={`max-w-[860px] text-block text-lg pt-4 `}
+                          className={`max-w-[860px] text-block max-sm:text-base text-lg pt-4 `}
                         >
                           {questions[id].content}
                         </p>
@@ -65,7 +65,7 @@ const questions: {[key: number]: { title: string; content: string }} = {
                     </div>
                     <div className="lg:w-[945px] absolute top-0 right-0">
                       <div className="flex justify-between pt-[3.8rem]">
-                        <h3 className="text-[32px] font-medium leading-[1.3125] tracking-[-0.44px]">
+                        <h3 className="text-[2rem] max-sm:text-[1.25rem] font-medium leading-[1.3125] tracking-[-0.44px]">
                           {questions[id].title}
                         </h3>
                         <div onClick={() => handleClick(id)} className="cursor-pointer">

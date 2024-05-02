@@ -6,9 +6,9 @@ import CheckIcon from "@/components/ui/icons/CheckIcon";
 const Pricing = () => {
   return (
     <Section fullWidth>
-      <div className="max-w-[1180px] pt-24">
-        <div className="flex justify-between max-lg:flex-col">
-          <h1 className="max-w-[689px] font-bold text-[64px] tracking-[-0.89px] leading-[1.1563]">
+      <div className="max-w-[1180px] pt-[4.5rem] max-sm:pt-8">
+        <div className="flex justify-between max-sm:px-5 max-lg:flex-col">
+          <h1 className="max-w-[689px] font-bold max-sm:text-[54px] text-[64px] tracking-[-0.89px] leading-[1.1563]">
             Choose the right plan
             <span className="text-placeholder-grey "> for your business</span>
           </h1>
@@ -77,20 +77,20 @@ const Pricing = () => {
       </div>
       <div className="mt-[7.4rem] bg-placeholder-grey h-[1px]"></div>
 
-      <div className="mt-11 flex flex-col items-center lg:flex-row lg:justify-center lg:max-w-[1480px] lg:pb-28">
+      <div className="mt-[3rem] max-w-[945px] pb-28 max-sm:pb-8 flex mx-auto justify-between items-center max-lg:flex-col max-lg:gap-6">
         <h3 className="text-[24px] lg:text-[32px] font-bold leading-[1.3125] tracking-[-0.44px] text-center lg:text-left">
           Need help choosing the right plan?
         </h3>
-        <div className="mt-6 lg:mt-0 lg:ml-12">
+        <div className="flex flex-row mt-6 h-[3.6rem] max-sm:gap-2 lg:mt-0 lg:ml-12">
           <Button
             secondary
-            className="w-full lg:w-auto h-14 text-lg px-5 font-bold rounded-lg mb-4 lg:mb-0 lg:mr-6"
+            className="w-full lg:w-auto h-[3.6rem] text-lg px-5 font-bold rounded-lg mb-4 lg:mb-0 lg:mr-6"
           >
             Contact sales
           </Button>
           <Button
             primary
-            className="w-full lg:w-auto h-14 text-lg px-5 font-bold rounded-lg"
+            className="w-full lg:w-auto h-[3.6rem] text-lg px-5 font-bold rounded-lg"
           >
             Compare plans
           </Button>
