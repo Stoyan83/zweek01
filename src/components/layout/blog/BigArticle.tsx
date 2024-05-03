@@ -1,8 +1,15 @@
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const BigArticle = ({ article }: any) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/blog/${article.id}`);
+  };
+
   return (
-    <div className="flex max-lg:flex-col max-lg:items-center justify-between gap-6 cursor-pointer">
+    <div className="flex max-lg:flex-col max-lg:items-center justify-between gap-6 cursor-pointer" onClick={handleClick}>
       <div className="flex flex-col max-w-[555px] w-full border-t-placeholder-grey border-y-[1px] border-b-placeholder-grey">
         <p className="mt-6 font-bold uppercase text-sm text-placeholder-grey tracking-[1.4px]">
           {article.type}

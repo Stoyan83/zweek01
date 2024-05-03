@@ -1,6 +1,13 @@
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const SmallArticles = ({ smallArticles, layout, mbTp }: any) => {
+  const router = useRouter();
+
+  const handleClick = (id: number) => {
+    router.push(`/blog/${id}`);
+  };
+
   return (
     <div
       className={`${
@@ -15,8 +22,10 @@ const SmallArticles = ({ smallArticles, layout, mbTp }: any) => {
           className={`${mbTp} ${
             layout === "vertical" ? "" : "md:w-1/2 lg:w-1/3"
           }`}
+          onClick={() => handleClick(blog.id)}
+          style={{ cursor: "pointer" }}
         >
-          <div className="cursor-pointer">
+          <div>
             {layout !== "vertical" && (
               <div className="text-sm font-bold uppercase tracking-[1.4px] text-placeholder-grey">
                 {blog.type}

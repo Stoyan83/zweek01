@@ -1,8 +1,15 @@
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const MiddleArticle = ({ midlleArticle }: any) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/blog/${midlleArticle.id}`);
+  };
+
   return (
-    <div className="max-w-[555px] lg:mr-10">
+    <div className="max-w-[555px] lg:mr-10" onClick={handleClick}>
       <p className="text-sm font-bold text-placeholder-grey tracking-[1.4px] uppercase">
         {midlleArticle.type}
       </p>
