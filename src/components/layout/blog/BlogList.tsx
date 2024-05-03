@@ -11,20 +11,20 @@ const BlogList = ({ blogs }: any) => {
 
   return (
     <div>
-      <div className="-mt-2">
+      <div className="-mt-1">
         <BigArticle article={bigArticle} />
       </div>
       <div className="mt-[4.25rem] flex flex-col gap-y-12 max-lg:gap-x-7 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
-        <SmallArticles layout="horizontal" smallArticles={smallArticles} />
+        <SmallArticles layout="horizontal"  mbTp={"mb-[7.4rem]"} smallArticles={smallArticles} />
       </div>
       <div className="flex lg:flex-row  sm:flex-col max-sm:flex-col md:flex-row  cursor-pointer">
         {midlleArticle && <MiddleArticle midlleArticle={midlleArticle} />}
         <div className="">
-          <SmallArticles layout="vertical" smallArticles={midlleArticles} />
+          <SmallArticles layout="vertical" mbTp={"mb-[3.2rem]"} smallArticles={midlleArticles} />
         </div>
       </div>
       <div className="mt-[4.25rem] pb-0 flex flex-col gap-y-12 gap-x-7 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
-        <SmallArticles layout="horizontal" smallArticles={lastSmallArticles} />
+        <SmallArticles layout="horizontal"  mbTp={"mb-[2rem]"} smallArticles={lastSmallArticles} />
       </div>
     </div>
   );

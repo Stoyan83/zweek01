@@ -1,21 +1,19 @@
 import Image from "next/image";
 
-const SmallArticles = ({ smallArticles, layout }: any) => {
+const SmallArticles = ({ smallArticles, layout, mbTp }: any) => {
   return (
     <div
       className={`${
         layout === "vertical"
-          ? "flex flex-col lg:w-[555px] mt-4 -mb-4"
+          ? "flex flex-col lg:w-[555px] mt-4 -mb-20"
           : "mt-[3.2rem] flex flex-wrap"
       }`}
     >
       {smallArticles.map((blog: any) => (
         <div
           key={blog.id}
-          className={`max-sm:mb-0 ${
-            layout === "vertical"
-              ? "mb-[2.3rem]"
-              : "mb-[7.4rem] md:w-1/2 lg:w-1/3"
+          className={`${mbTp} ${
+            layout === "vertical" ? "" : "md:w-1/2 lg:w-1/3"
           }`}
         >
           <div className="cursor-pointer">
@@ -31,7 +29,11 @@ const SmallArticles = ({ smallArticles, layout }: any) => {
                   : "mt-[14px] max-w-[361px]"
               } h-[1px] bg-placeholder-grey`}
             ></div>
-            <div className="mt-6">
+            <div className={`${
+                layout === "vertical"
+                  ? "mt-2"
+                  : "mt-6"
+              }`}>
               {layout !== "vertical" && (
                 <Image
                   src={blog.image}
@@ -46,16 +48,23 @@ const SmallArticles = ({ smallArticles, layout }: any) => {
                   blog.id === 11 ? "max-w-[400px]" : ""
                 } ${blog.id === 9 ? "max-w-[486px]" : ""}
                 ${blog.id === 10 ? "max-w-[486px]" : ""}
-                ${layout !== "vertical" ? "max-w-[361px]" : ""}`}
+                ${layout !== "vertical" ? "max-w-[361px] -mt-2" : ""}`}
               >
                 {blog.title}
               </h2>
-              <p className="pt-[1.3rem]">
-                {blog.date}
-                <span className="text-placeholder-grey">
-                  , by {blog.author}
-                </span>
-              </p>
+              <div className="flex justify-between">
+                <p className="pt-[1.3rem]">
+                  {blog.date}
+                  <span className="text-placeholder-grey">
+                    , by {blog.author}
+                  </span>
+                </p>
+                {layout === "vertical" && (
+                  <div className="text-sm pt-6 font-bold uppercase tracking-[1.4px] text-placeholder-grey">
+                    {blog.type}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
