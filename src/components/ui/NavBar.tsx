@@ -48,7 +48,7 @@ const NavBar = () => {
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
         <button
           onClick={toggleMenu}
-          className="block max-sm:mr-8 mr-20 text-black"
+          className="block pr-3 text-black"
         >
           <svg
             className="h-6 w-6"

@@ -33,18 +33,16 @@ const Blog = () => {
     }
   });
 
-  console.log(blogs);
-
   return (
     <>
       <Section fullWidth>
         <div className="px-5 pb-0 pt-[4.6rem]">
-          <div className="flex flex-col justify-start">
+          <div className="flex flex-col lg:justify-start max-lg:justify-start md:justify-start sm:justify-center max-sm:justify-center">
             <h1 className="max-w-[689px] font-bold max-sm:text-[54px] text-[64px] tracking-[-0.89px] leading-[1.1563]">
               News and insights{" "}
               <span className="text-placeholder-grey">from our experts</span>
             </h1>
-            <div className="flex pt-[5.8rem]">
+            <div className="flex lg:justify-start max-lg:justify-start md:justify-center sm:justify-center max-sm:justify-center pt-[5.8rem]">
               <Tabs tabs={tabs} onTabChange={handleTabChange} />
             </div>
           </div>
