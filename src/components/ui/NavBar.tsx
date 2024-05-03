@@ -2,12 +2,11 @@
 import { useState } from "react";
 import Logo from "./Logo";
 import { NavLink } from "./NavLink";
-import Link from "next/link";
 import LogIn from "./LogIn";
 
 const links = [
-  { id: 1, href: "/", text: "Product", style: "ml-2" },
-  { id: 2, href: "/pricing", text: "Pricing", style: "ml-2" },
+  { id: 1, href: "/", text: "Product", style: "ml-0" },
+  { id: 2, href: "/pricing", text: "Pricing", style: "ml-4" },
   { id: 3, href: "/company", text: "Company", style: "ml-2" },
   { id: 4, href: "/blog", text: "Blog", style: "ml-2" },
   { id: 5, href: "/contact", text: "Contact", style: "ml-2" },
@@ -27,26 +26,23 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="max-w-[1140px] mx-auto  h-[80px] flex items-center lg:gap-x-8 max-lg:justify-between relative z-200">
+    <div className="max-w-[1180px] mx-auto px-5 h-[80px] flex items-center lg:gap-x-8 max-lg:justify-between relative z-200">
       <div className="flex items-center gap-24">
-        <Link className="max-sm:ml-4" href="/">
-          <Logo />
-        </Link>
-
-        <div className="hidden lg:flex items-center">
+        <Logo className="" />
+        <nav className="hidden lg:flex items-center">
           {links.map((link) => (
             <NavLink
               key={link.id}
               href={link.href}
-              className={`py-1 text-sm mr-10 font-medium border-b-2 border-transparent hover:border-black max-lg:text-xl ${link.style}`}
+              className={`py-2 px-1 text-sm mr-10 font-medium border-b-2 border-transparent hover:border-black max-lg:text-xl ${link.style}`}
               exact
             >
               {link.text}
             </NavLink>
           ))}
-        </div>
+        </nav>
       </div>
-      <div className="hidden lg:flex -mt-1 gap-2 ml-44 max-lg:flex-col max-lg:gap-9">
+      <div className="hidden lg:flex -mt-1 ml-[9.8rem] max-lg:flex-col max-lg:gap-9">
         <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
@@ -93,10 +89,12 @@ const NavBar = () => {
               </NavLink>
             </div>
           ))}
-          <LogIn isOpen={isOpen} />
+          <div className="-ml-1">
+            <LogIn isOpen={isOpen} />
+          </div>
         </div>
       )}
-    </nav>
+    </div>
   );
 };
 

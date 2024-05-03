@@ -1,4 +1,6 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
 
 interface LogoProps {
   [key: string]: any;
@@ -6,7 +8,9 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = (props) => {
   return (
-    <img src="/logo.svg" alt="logo" {...props} />
+    <Link href="/" className="w-[93px]">
+      <Image src="/logo.svg" width={93} height={25} alt="logo" {...props} />
+    </Link>
   );
 };
 
