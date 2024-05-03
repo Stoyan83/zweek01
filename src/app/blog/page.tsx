@@ -7,7 +7,7 @@ export default function BlogPage() {
   return (
     <Main>
       <Blog />
-      <AdvertiseBanner />
+      <AdvertiseBanner marginTopClass={"mt-0"}/>
     </Main>
   );
 }
