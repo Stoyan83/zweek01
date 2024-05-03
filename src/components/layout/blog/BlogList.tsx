@@ -14,11 +14,11 @@ const BlogList = ({ blogs }: any) => {
         <BigArticle article={bigArticle} />
       </div>
       <div className="mt-[4.25rem] flex flex-col gap-y-12 max-lg:gap-x-7 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
-        <SmallArticles smallArticles={smallArticles} />
+        <SmallArticles layout="horizontal" smallArticles={smallArticles} />
       </div>
-      
+
       <div className="mt-[4.25rem] flex flex-col gap-y-12 gap-x-7 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
-        <SmallArticles smallArticles={lastSmallArticles} />
+        <SmallArticles layout="horizontal" smallArticles={lastSmallArticles} />
       </div>
     </div>
   );
