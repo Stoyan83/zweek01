@@ -462,14 +462,14 @@ export const articles = [
     title: 'Sales Funnels: Definition, Process, Stages and Examples',
     date: '01 Dec 2022',
     author: 'Edith Rose',
-    image: article11
+    image: article9
   }, {
     id: 13,
     type: 'sales',
     title: 'What is a sales and how do you build one?',
     date: '29 Mar 2022',
     author: 'Amanda Brooks',
-    image: article11
+    image: article10
   }, {
     id: 14,
     type: 'service',

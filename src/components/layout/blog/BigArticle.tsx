@@ -7,9 +7,9 @@ const BigArticle = ({ article }: any) => {
         <p className="mt-6 font-bold uppercase text-sm text-placeholder-grey tracking-[1.4px]">
           {article.type}
         </p>
-        <h3 className="mt-[13px] font-bold text-[40px] leading-[1.2] tracking-[-0.56px] max-lg:text-[32px]">
+        <h2 className="mt-[13px] font-bold text-[40px] leading-[1.2] tracking-[-0.56px] max-lg:text-[32px]">
           {article.title}
-        </h3>
+        </h2>
         <div className="flex pt-10 mb-4 mt-auto font-medium">
           <p>
             {article.date}
