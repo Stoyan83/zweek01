@@ -25,7 +25,7 @@ export const items = [
 export const services = [
   {
     id: 1,
-    tag: 'SALES',
+    tag: 'sales',
     title: 'Increase company revenue up to 65%',
     image: "/service1.svg",
     text: {
@@ -354,3 +354,141 @@ export const logos = [
   { src: "/Walmart.png", alt: "walmart", width: 129, height: 30 },
   { src: "/Amazon.png", alt: "amazon", width: 95, height: 29 },
 ];
+
+
+export const articles = [
+  {
+    id: 1,
+    type: 'service',
+    title: 'The 2024 State of Marketing & Trends Report: Data from 1400+ Global Marketers',
+    date: '05 Sep 2024',
+    author: 'Maxwell Iskiev',
+    image: '/article1.png'
+  },
+  {
+    id: 2,
+    type: 'news',
+    title: 'Learn from My Mistakes: 7 Digital Course Pitfalls to Skip',
+    date: '29 Jun 2024',
+    author: 'Joshua Nash',
+    image: '/article2.png'
+  },
+  {
+    id: 3,
+    type: 'sales',
+    title: 'How To Do Representation in Marketing the Right Way ',
+    date: '20 Mar 2022',
+    author: 'Bill Holloway',
+    image: '/article3.png'
+  },
+  {
+    id: 4,
+    type: 'sales',
+    title: 'The Psychology of Short-Form Content: Why We Love...',
+    date: '07 Jun 2024',
+    author: 'Stephen Henderson',
+    image: '/article4.png'
+  },
+  {
+    id: 5,
+    type: 'sales',
+    title: 'The Challenger Sale model: How to lead the conversation',
+    date: '09 Jan 2024',
+    author: 'Joshua Nash',
+    image: '/article5.png'
+  },
+  {
+    id: 6,
+    type: 'product',
+    title: '3 ways To automate your lead generation process ',
+    date: '08 Jul 2024',
+    author: 'Leroy Figueroa',
+    image: '/article6.png',
+  },
+  {
+    id: 7,
+    type: 'product',
+    title: 'Marketplace Monthly Apps Spotlight: Aug 2023',
+    date: '05 Aug 2024',
+    author: 'Joshua Nash',
+    image: '/article7.png',
+  },
+  {
+    id: 8,
+    type: 'marketing',
+    title: 'Email marketing best practices: 10 experts share their email tips',
+    date: '23 Nov 2023',
+    author: 'Joshua Nash',
+    image: '/article8.png',
+  },
+  {
+    id: 9,
+    type: 'product',
+    title: 'Access Roooby leads features on your mobile',
+    date: '11 Aug 2023',
+    author: 'Joshua Nash',
+    image: '/article9.png',
+  },
+  {
+    id: 10,
+    type: 'sales',
+    title: 'Sales presentations: templates, examples and ideas on how to present like a pro',
+    date: '11 Oct 2022',
+    author: 'Laura Ryan',
+    image: '/article10.png',
+  },
+  {
+    id: 11,
+    type: 'news',
+    title: 'How To Deliver a Successful Product Launch',
+    date: '30 Jan 2022',
+    author: 'Alice Washington',
+    image: '/article11.png',
+  },
+  {
+    id: 12,
+    type: 'product',
+    title: 'Sales Funnels: Definition, Process, Stages and Examples',
+    date: '01 Dec 2022',
+    author: 'Edith Rose',
+    image: '/article10.png',
+  }, {
+    id: 13,
+    type: 'sales',
+    title: 'What is a sales and how do you build one?',
+    date: '29 Mar 2022',
+    author: 'Amanda Brooks',
+    image: '/article11.png',
+  }, {
+    id: 14,
+    type: 'service',
+    title: '10 real estate cold calling scripts to increase lead',
+    date: '27 Dec 2022',
+    author: 'Roxie Sandoval',
+    image: '/article11.png',
+  },
+  {
+    id: 15,
+    type: 'news',
+    title: 'How To Deliver a Successful Product Launch',
+    date: '30 Jan 2022',
+    author: 'Alice Washington',
+    image: '/article1.png',
+  },
+  {
+    id: 16,
+    type: 'marketing',
+    title: 'Email marketing best practices: 10 experts share their email tips',
+    date: '23 Nov 2023',
+    author: 'Joshua Nash',
+    image: '/article10.png',
+  },
+  {
+    id: 17,
+    type: 'marketing',
+    title: 'Email marketing best practices: 10 experts share their email tips',
+    date: '23 Nov 2023',
+    author: 'Joshua Nash',
+    image: '/article14.png',
+  },
+]

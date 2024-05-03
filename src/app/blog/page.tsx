@@ -1,11 +1,11 @@
 
 import Main from "@/components/ui/Main";
-import BlogList from "@/components/layout/blog/BlogList";
+import Blog from "@/components/layout/blog/Blog";
 
 export default function BlogPage() {
   return (
     <Main>
-      <BlogList />
+      <Blog />
     </Main>
   );
 }
