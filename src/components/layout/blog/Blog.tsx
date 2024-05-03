@@ -38,21 +38,21 @@ const Blog = () => {
   return (
     <>
       <Section fullWidth>
-        <div className="px-5 pb-10 pt-[4.6rem]">
+        <div className="px-5 pb-0 pt-[4.6rem]">
           <div className="flex flex-col justify-start">
             <h1 className="max-w-[689px] font-bold max-sm:text-[54px] text-[64px] tracking-[-0.89px] leading-[1.1563]">
               News and insights{" "}
               <span className="text-placeholder-grey">from our experts</span>
             </h1>
-            <div className="pt-[5.8rem]">
+            <div className="flex pt-[5.8rem]">
               <Tabs tabs={tabs} onTabChange={handleTabChange} />
             </div>
           </div>
         </div>
       </Section>
       <Section fullWidth className="bg-white">
-      <div className="max-w-[73.75rem] px-5 mx-auto max-sm:py-5 py-32">
-      <div className="flex gap-7 max-lg:text-center max-lg:flex-col max-lg:items-center">
+        <div className="max-w-[73.75rem] px-5 mx-auto max-sm:py-5 py-32">
+          <div className="flex gap-7 max-lg:text-center max-lg:flex-col max-lg:items-center">
             <BlogList blogs={blogs} />
           </div>
         </div>

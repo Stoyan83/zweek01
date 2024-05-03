@@ -20,12 +20,12 @@ const Tabs = ({ tabs, onTabChange }: TabsProps) => {
   };
 
   return (
-    <div className="flex gap-x-[36px]">
+    <div className="flex flex-col lg:flex-row lg:gap-x-[36px]">
       {tabs.map(tab => (
         <button
           key={tab.id}
           onClick={() => handleTabClick(tab.id)}
-          className={`pb-7 font-medium text-lg hover:border-news-green border-b-[3px] focus:outline-none ${activeTab === tab.id ? 'border-news-green' : 'border-transparent text-pricing-gray'}`}
+          className={`md:pb-0 lg:pb-7 max-lg:pb-7 sm:pb-0 max-sm:pb-0 font-medium whitespace-nowrap text-lg hover:border-news-green border-b-[3px] focus:outline-none ${activeTab === tab.id ? 'border-news-green' : 'border-transparent text-pricing-gray'}`}
         >
           {tab.title}
         </button>
