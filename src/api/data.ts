@@ -355,6 +355,17 @@ export const logos = [
   { src: "/Amazon.png", alt: "amazon", width: 95, height: 29 },
 ];
 
+import article1 from '../../public/article1.png';
+import article2 from '../../public/article2.png';
+import article3 from '../../public/article3.png';
+import article4 from '../../public/article4.png';
+import article5 from '../../public/article5.png';
+import article6 from '../../public/article6.png';
+import article7 from '../../public/article7.png';
+import article8 from '../../public/article8.png';
+import article9 from '../../public/article9.png';
+import article10 from '../../public/article10.png';
+import article11 from '../../public/article11.png';
 
 export const articles = [
   {
@@ -363,7 +374,7 @@ export const articles = [
     title: 'The 2024 State of Marketing & Trends Report: Data from 1400+ Global Marketers',
     date: '05 Sep 2024',
     author: 'Maxwell Iskiev',
-    image: '/article1.png'
+    image: article1
   },
   {
     id: 2,
@@ -371,7 +382,7 @@ export const articles = [
     title: 'Learn from My Mistakes: 7 Digital Course Pitfalls to Skip',
     date: '29 Jun 2024',
     author: 'Joshua Nash',
-    image: '/article2.png'
+    image: article2
   },
   {
     id: 3,
@@ -379,7 +390,7 @@ export const articles = [
     title: 'How To Do Representation in Marketing the Right Way ',
     date: '20 Mar 2022',
     author: 'Bill Holloway',
-    image: '/article3.png'
+    image: article3
   },
   {
     id: 4,
@@ -387,7 +398,7 @@ export const articles = [
     title: 'The Psychology of Short-Form Content: Why We Love...',
     date: '07 Jun 2024',
     author: 'Stephen Henderson',
-    image: '/article4.png'
+    image: article4
   },
   {
     id: 5,
@@ -395,7 +406,7 @@ export const articles = [
     title: 'The Challenger Sale model: How to lead the conversation',
     date: '09 Jan 2024',
     author: 'Joshua Nash',
-    image: '/article5.png'
+    image: article5
   },
   {
     id: 6,
@@ -403,7 +414,7 @@ export const articles = [
     title: '3 ways To automate your lead generation process ',
     date: '08 Jul 2024',
     author: 'Leroy Figueroa',
-    image: '/article6.png',
+    image: article6
   },
   {
     id: 7,
@@ -411,7 +422,7 @@ export const articles = [
     title: 'Marketplace Monthly Apps Spotlight: Aug 2023',
     date: '05 Aug 2024',
     author: 'Joshua Nash',
-    image: '/article7.png',
+    image: article7
   },
   {
     id: 8,
@@ -419,7 +430,7 @@ export const articles = [
     title: 'Email marketing best practices: 10 experts share their email tips',
     date: '23 Nov 2023',
     author: 'Joshua Nash',
-    image: '/article8.png',
+    image: article8
   },
   {
     id: 9,
@@ -427,7 +438,7 @@ export const articles = [
     title: 'Access Roooby leads features on your mobile',
     date: '11 Aug 2023',
     author: 'Joshua Nash',
-    image: '/article9.png',
+    image: article9
   },
   {
     id: 10,
@@ -435,7 +446,7 @@ export const articles = [
     title: 'Sales presentations: templates, examples and ideas on how to present like a pro',
     date: '11 Oct 2022',
     author: 'Laura Ryan',
-    image: '/article10.png',
+    image: article10,
   },
   {
     id: 11,
@@ -443,52 +454,28 @@ export const articles = [
     title: 'How To Deliver a Successful Product Launch',
     date: '30 Jan 2022',
     author: 'Alice Washington',
-    image: '/article11.png',
+    image: article11
   },
   {
     id: 12,
-    type: 'product',
+    type: 'service',
     title: 'Sales Funnels: Definition, Process, Stages and Examples',
     date: '01 Dec 2022',
     author: 'Edith Rose',
-    image: '/article10.png',
+    image: article11
   }, {
     id: 13,
     type: 'sales',
     title: 'What is a sales and how do you build one?',
     date: '29 Mar 2022',
     author: 'Amanda Brooks',
-    image: '/article11.png',
+    image: article11
   }, {
     id: 14,
     type: 'service',
     title: '10 real estate cold calling scripts to increase lead',
     date: '27 Dec 2022',
     author: 'Roxie Sandoval',
-    image: '/article11.png',
-  },
-  {
-    id: 15,
-    type: 'news',
-    title: 'How To Deliver a Successful Product Launch',
-    date: '30 Jan 2022',
-    author: 'Alice Washington',
-    image: '/article1.png',
-  },
-  {
-    id: 16,
-    type: 'marketing',
-    title: 'Email marketing best practices: 10 experts share their email tips',
-    date: '23 Nov 2023',
-    author: 'Joshua Nash',
-    image: '/article10.png',
-  },
-  {
-    id: 17,
-    type: 'marketing',
-    title: 'Email marketing best practices: 10 experts share their email tips',
-    date: '23 Nov 2023',
-    author: 'Joshua Nash',
-    image: '/article14.png',
-  },
+    image: article11
+  }
 ]
