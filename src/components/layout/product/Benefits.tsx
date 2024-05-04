@@ -6,7 +6,7 @@ import Section from "@/components/ui/Section";
 const Benefits = () => {
   return (
     <Section fullWidth className="bg-primary text-white -mt-24">
-      <div className="max-w-[73.75rem] mx-auto max-sm:py-5 px-5 py-32">
+      <div className="max-w-[73.75rem] mx-auto max-sm:py-12 px-5 py-32">
         <div className="flex gap-7 max-lg:text-center max-lg:flex-col max-lg:items-center">
           <h2 className="max-w-[35rem] leading-[1.2] text-5xl font-bold">
             Here&apos;s how Roooby can benefit your business
