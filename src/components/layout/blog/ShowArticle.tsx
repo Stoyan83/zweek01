@@ -20,15 +20,15 @@ function ShowArticle({
       <div className="flex flex-col flex-wrap items-center pt-10 px-5">
         <div className="max-w-[800px] px-5">
           <div className=" mx-auto">
-            <p className="mt-8 font-bold uppercase text-[14px] text-placeholder-grey tracking-[1.4px]">
+            <p className="mt-8 font-bold uppercase max-sm:text-xs text-[14px] text-placeholder-grey tracking-[1.4px]">
               {article.type}
             </p>
             <div className="mt-[6px] h-[1px] bg-placeholder-grey"></div>
 
-            <h2 className="max-w-[865px] pt-[22px] font-bold leading-[1.2] text-5xl tracking-[-0.67px] max-lg:text-[40px]">
+            <h2 className="max-w-[865px] pt-[22px] font-bold leading-[1.2] max-sm:text-lg text-5xl tracking-[-0.67px]">
               {article.title}
             </h2>
-            <div className="flex pt-6 mb-4 mt-auto font-medium">
+            <div className="max-sm:text-xs flex pt-6 mb-4 mt-auto font-medium">
               <p>
                 {article.date}
                 <span className="text-placeholder-grey">
@@ -38,14 +38,14 @@ function ShowArticle({
             </div>
           </div>
         </div>
-        <div className="max-w-[945px] mx-auto overflow-hidden">
+        <div className="max-w-[945px]  mt-5 mx-auto overflow-hidden">
           <Image
             src={article.image}
             loading="lazy"
             width={945}
             height={511}
             alt="Show Article"
-            className="max-h-[511px] max-w-[945px]"
+            className="w-screen max-h-[511px]"
           />
         </div>
       </div>
