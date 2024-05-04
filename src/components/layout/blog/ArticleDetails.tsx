@@ -48,14 +48,14 @@ const ArticleDetails = ({ article }: any) => {
                 aliquid ex ea commodi consequatur? Quis autem vel eum iure
                 reprehenderit qui in ea voluptate velit esse quam nihil
                 molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?"
+                voluptas nulla pariatu?
               </p>
               <div className="py-[22px] border-y-placeholder-grey border-t-[1px] border-b-[1px] !mt-[12px]">
                 <p className="mt-2 text-2xl leading-[1.4] font-medium">
                   “At vero eos et accusamus et iusto odio dignissimos ducimus
                   qui blanditiis praesentium voluptatum deleniti atque corrupti
                   quos dolores et quas molestias excepturi sint occaecati
-                  cupiditate non provident”
+                  cupiditate non provident
                 </p>
                 <p className="mt-8 font-medium text-base text-placeholder-grey">
                   Matthew Barker
@@ -113,7 +113,7 @@ const ArticleDetails = ({ article }: any) => {
                 aliquid ex ea commodi consequatur? Quis autem vel eum iure
                 reprehenderit qui in ea voluptate velit esse quam nihil
                 molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?"
+                voluptas nulla pariatur?
               </p>
               <div className="mt-4">
 

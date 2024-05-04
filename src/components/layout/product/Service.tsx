@@ -51,7 +51,7 @@ const Service = ({ item }: { item: any }) => (
             </p>
             <Button
               primary
-              className="px-4 py-[10px] lg:py-4 lg:ml-2 font-bold text-lg bg-news-green rounded-lg"
+              className="px-4 py-[10px] lg:py-4 lg:ml-2 font-bold text-lg !bg-news-green hover:!bg-black rounded-lg"
             >
               Start now
             </Button>

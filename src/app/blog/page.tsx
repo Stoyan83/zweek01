@@ -1,4 +1,4 @@
-
+"use client";
 import Main from "@/components/ui/Main";
 import Blog from "@/components/layout/blog/Blog";
 import AdvertiseBanner from "@/components/ui/AdvertiseBanner";

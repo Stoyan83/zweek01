@@ -6,33 +6,20 @@ import News from "@/components/layout/product/News";
 import ProductHome from "@/components/layout/product/ProductHome";
 import Services from "@/components/layout/product/Services";
 import AdvertiseBanner from "@/components/ui/AdvertiseBanner";
-
 import Main from "@/components/ui/Main";
-import Section from "@/components/ui/Section";
+
 
 export default function Home() {
   return (
     <Main>
-      <Section>
-        <ProductHome />
-      </Section>
-      <Section fullWidth className="bg-primary text-white -mt-24">
-        <Benefits />
-      </Section>
+      <ProductHome />
+      <Benefits />
       <Services />
-      <Section className="mt-3">
-        <Applications />
-      </Section>
-      <Section fullWidth className="bg-white">
-        <News />
-      </Section>
-      <Section fullWidth className="bg-white">
-        <Charts />
-      </Section>
-      <Section fullWidth>
-        <ClientsFeedback />
-      </Section>
-      <AdvertiseBanner customClasses={"pb-10"}/>
+      <Applications />
+      <News />
+      <Charts />
+      <ClientsFeedback />
+      <AdvertiseBanner customClasses={"pb-10"} />
     </Main>
   );
 }

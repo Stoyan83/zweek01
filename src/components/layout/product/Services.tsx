@@ -1,7 +1,6 @@
-import { services } from "@/api/data";
+import { services } from "@/api-data/data";
 import Section from "@/components/ui/Section";
 import Service from "./Service";
-
 
 const Services = () => {
   return (

@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
+import Modal from '@/components/ui/Modal';
+
 
 const initialFormData = {
   name: '',
@@ -11,6 +13,8 @@ const initialFormData = {
 
 const ContactForm = () => {
   const [formData, setFormData] = useState(initialFormData);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -23,7 +27,19 @@ const ContactForm = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
 
-    setFormData(initialFormData);
+    if (formData.name && formData.email && formData.message) {
+      setIsModalOpen(true);
+      setModalMessage("Your message has been sent successfully!");
+      setFormData(initialFormData);
+    } else {
+      setIsModalOpen(true);
+      setModalMessage("Please fill out all fields.");
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalMessage("");
   };
 
   return (
@@ -71,6 +87,9 @@ const ContactForm = () => {
       <Button green arrowIcon type="submit">
         Send message
       </Button>
+      <Modal isModalOpen={isModalOpen} closeModal={closeModal}>
+        {modalMessage}
+      </Modal>
     </form>
   );
 };

@@ -1,3 +1,4 @@
+"use client";
 import Main from "@/components/ui/Main";
 import Pricing from "@/components/layout/pricing/Pricing";
 import Questions from "@/components/layout/pricing/Questions";

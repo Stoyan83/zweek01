@@ -1,4 +1,5 @@
-import { logos } from "@/api/data";
+"use client";
+import { logos } from "@/api-data/data";
 import Contact from "@/components/layout/contact/Contact";
 import Main from "@/components/ui/Main";
 import LogoSection from "@/components/ui/LogoSection";

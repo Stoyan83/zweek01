@@ -1,10 +1,11 @@
-import { feedback } from "@/api/data";
+import { feedback } from "@/api-data/data";
 import NextLink from "@/components/ui/NextLink";
+import Section from "@/components/ui/Section";
 import Image from "next/image";
 
 const ClientsFeedback = () => {
   return (
-    <>
+    <Section fullWidth>
       <div className="max-w-[73.75rem] lg:pt-[7.9rem] max-sm:pt-10 pl-0 lg:pb-32 mx-auto px-5">
         <div className="flex justify-between max-lg:gap-6 max-lg:flex-col max-lg:items-center">
           <h2 className="max-w-[580px] text-5xl font-bold leading-[1.2083] tracking-[-0.67px] max-lg:text-[40px] max-lg:text-center">
@@ -48,7 +49,7 @@ const ClientsFeedback = () => {
           </div>
         ))}
       </div>
-    </>
+    </Section>
   );
 };
 

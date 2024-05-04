@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Section from "@/components/ui/Section";
 import Tabs from "@/components/ui/Tabs";
-import { articles } from "@/api/data";
+import { articles } from "@/api-data/data";
 import BlogList from "./BlogList";
 
 const Blog = () => {

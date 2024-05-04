@@ -4,7 +4,9 @@ import Button from "../../ui/Button";
 import Input from "../../ui/Input";
 import Image from "next/image";
 import LogoBar from "@/components/ui/LogoBar";
-import { logos } from "@/api/data";
+import { logos } from "@/api-data/data";
+import Section from "@/components/ui/Section";
+import Modal from "@/components/ui/Modal";
 
 const ProductHome = () => {
   const [email, setEmail] = useState("");
@@ -31,14 +33,14 @@ const ProductHome = () => {
     setErrorMessage("");
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     setEmail(e.target.value);
     setErrorMessage("");
   };
 
   return (
-    <>
-      <div className="mx-auto object-cover ml-0  max-sm:pt-5 max-sm:pb-20 lg:pt-16 lg:pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
+    <Section>
+      <div className="mx-auto object-cover ml-0 px-5 max-sm:pt-5 max-sm:pb-20 lg:pt-16 lg:pb-[90px] relative max-xl:flex max-xl:flex-col max-xl:gap-[70px] max-xl:text-center">
         <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
           <h1 className="max-w-[642px] text-[64px] font-bold tracking-[-0.89px] leading-[74px] text-primary max-sm:text-[40px] max-sm:leading-[50px]">
             Bringing companies and customers together, anywhere
@@ -75,7 +77,7 @@ const ProductHome = () => {
               Full access. No credit card required.
             </p>
           </form>
-          <div className="absolute top-[76px] -right-[242px] max-xl:static max-xl:self-center max-sm:-mt-16 max-sm:px-5">
+          <div className="absolute top-[76px] -right-[220px] max-xl:static max-xl:self-center max-sm:-mt-16 max-sm:px-5">
             <Image
               src="/home-product.svg"
               alt="home"
@@ -90,29 +92,10 @@ const ProductHome = () => {
           </div>
         </div>
         {isModalOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg w-auto">
-              <div className="p-6">
-                <h2 className="text-xl font-bold mb-4">
-                  Thank you for contacting us!
-                </h2>
-                <p className="text-sm leading-relaxed">
-                  We've received your email and will get back to you soon.
-                </p>
-              </div>
-              <div className="flex justify-end p-3 bg-gray-100">
-                <button
-                  onClick={closeModal}
-                  className="text-sm font-semibold px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-md"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
+          <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
         )}
       </div>
-    </>
+    </Section>
   );
 };
 
