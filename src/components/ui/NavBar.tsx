@@ -1,5 +1,5 @@
-"use client";
-import { useState } from "react";
+'use client'
+import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import { NavLink } from "./NavLink";
 import LogIn from "./LogIn";
@@ -19,11 +19,13 @@ const NavBar = () => {
     setIsOpen((prevState) => !prevState);
   };
 
-  if (isOpen) {
-    document.body.classList.add("overflow-hidden");
-  } else {
-    document.body.classList.remove("overflow-hidden");
-  }
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isOpen]);
 
   return (
     <div className="max-w-[1180px] mx-auto px-5 h-[80px] flex items-center lg:gap-x-8 max-lg:justify-between relative z-200">
@@ -46,10 +48,7 @@ const NavBar = () => {
         <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
-        <button
-          onClick={toggleMenu}
-          className="block pr-3 text-black"
-        >
+        <button onClick={toggleMenu} className="block pr-3 text-black">
           <svg
             className="h-6 w-6"
             fill="none"

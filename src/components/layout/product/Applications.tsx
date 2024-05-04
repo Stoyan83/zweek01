@@ -7,7 +7,7 @@ import Section from "@/components/ui/Section";
 const Applications = () => {
   return (
     <Section className="mt-3">
-      <div className="lg:mt-[9rem] lg:mb-14 max-sm:my-5 mx-auto px-5 text-center">
+      <div className="lg:mt-[9rem] max-w-[1180px] lg:mb-14 max-sm:my-5 mx-auto px-5 text-center">
         <h2 className="text-5xl -mt-2 font-bold tracking-[-1px]">
           Over 300+ integrations
         </h2>
