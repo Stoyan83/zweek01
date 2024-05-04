@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-const SmallArticles = ({ smallArticles, layout, mbTp }: any) => {
+const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
   const router = useRouter();
 
   const handleClick = (id: number) => {
@@ -10,7 +10,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp }: any) => {
 
   return (
     <div
-      className={`${
+      className={`${backGround} ${
         layout === "vertical"
           ? "flex flex-col lg:w-[555px] mt-4 -mb-20"
           : "mt-[3.2rem] flex flex-wrap"
