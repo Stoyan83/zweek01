@@ -374,7 +374,8 @@ export const articles = [
     title: 'The 2024 State of Marketing & Trends Report: Data from 1400+ Global Marketers',
     date: '05 Sep 2024',
     author: 'Maxwell Iskiev',
-    image: article1
+    image: article1,
+    role: 'Marketing Analyst'
   },
   {
     id: 2,
@@ -382,7 +383,8 @@ export const articles = [
     title: 'Learn from My Mistakes: 7 Digital Course Pitfalls to Skip',
     date: '29 Jun 2024',
     author: 'Joshua Nash',
-    image: article2
+    image: article2,
+    role: 'Content Developer'
   },
   {
     id: 3,
@@ -390,7 +392,8 @@ export const articles = [
     title: 'How To Do Representation in Marketing the Right Way ',
     date: '20 Mar 2022',
     author: 'Bill Holloway',
-    image: article3
+    image: article3,
+    role: 'Sales Representative'
   },
   {
     id: 4,
@@ -398,7 +401,8 @@ export const articles = [
     title: 'The Psychology of Short-Form Content: Why We Love...',
     date: '07 Jun 2024',
     author: 'Stephen Henderson',
-    image: article4
+    image: article4,
+    role: 'Sales Strategist'
   },
   {
     id: 5,
@@ -406,7 +410,8 @@ export const articles = [
     title: 'The Challenger Sale model: How to lead the conversation',
     date: '09 Jan 2024',
     author: 'Joshua Nash',
-    image: article5
+    image: article5,
+    role: 'Sales Consultant'
   },
   {
     id: 6,
@@ -414,7 +419,8 @@ export const articles = [
     title: '3 ways To automate your lead generation process ',
     date: '08 Jul 2024',
     author: 'Leroy Figueroa',
-    image: article6
+    image: article6,
+    role: 'Product Manager'
   },
   {
     id: 7,
@@ -422,7 +428,8 @@ export const articles = [
     title: 'Marketplace Monthly Apps Spotlight: Aug 2023',
     date: '05 Aug 2024',
     author: 'Joshua Nash',
-    image: article7
+    image: article7,
+    role: 'Product Marketing Manager'
   },
   {
     id: 8,
@@ -430,7 +437,8 @@ export const articles = [
     title: 'Email marketing best practices: 10 experts share their email tips',
     date: '23 Nov 2023',
     author: 'Joshua Nash',
-    image: article8
+    image: article8,
+    role: 'Email Marketing Specialist'
   },
   {
     id: 9,
@@ -438,7 +446,8 @@ export const articles = [
     title: 'Access Roooby leads features on your mobile',
     date: '11 Aug 2023',
     author: 'Joshua Nash',
-    image: article9
+    image: article9,
+    role: 'Mobile App Developer'
   },
   {
     id: 10,
@@ -447,6 +456,7 @@ export const articles = [
     date: '11 Oct 2022',
     author: 'Laura Ryan',
     image: article10,
+    role: 'Sales Trainer'
   },
   {
     id: 11,
@@ -454,7 +464,8 @@ export const articles = [
     title: 'How To Deliver a Successful Product Launch',
     date: '30 Jan 2022',
     author: 'Alice Washington',
-    image: article11
+    image: article11,
+    role: 'Product Launch Manager'
   },
   {
     id: 12,
@@ -462,20 +473,25 @@ export const articles = [
     title: 'Sales Funnels: Definition, Process, Stages and Examples',
     date: '01 Dec 2022',
     author: 'Edith Rose',
-    image: article9
-  }, {
+    image: article9,
+    role: 'Sales Funnel Analyst'
+  },
+  {
     id: 13,
     type: 'sales',
     title: 'What is a sales and how do you build one?',
     date: '29 Mar 2022',
     author: 'Amanda Brooks',
-    image: article10
-  }, {
+    image: article10,
+    role: 'Sales Developer'
+  },
+  {
     id: 14,
     type: 'service',
     title: '10 real estate cold calling scripts to increase lead',
     date: '27 Dec 2022',
     author: 'Roxie Sandoval',
-    image: article11
+    image: article11,
+    role: 'Sales Script Writer'
   }
 ]

@@ -3,6 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./Logo";
+import twitter from "../../../public/twitter.png";
+import linkedin from "../../../public/linkedin.png";
+import facebook from "../../../public/facebook.png";
 
 const links = [
   {
@@ -59,24 +62,15 @@ const Footer = () => {
                 solution for SMBs
               </p>
               <div className="pt-4 flex justify-center lg:justify-start flex-row gap-4">
-                <Image
-                  src="/twitter.png"
-                  alt="twitter"
-                  width={24}
-                  height={24}
-                ></Image>
-                <Image
-                  src="/facebook.png"
-                  alt="facebook"
-                  width={24}
-                  height={24}
-                ></Image>
-                <Image
-                  src="/linkedin.png"
-                  alt="linkedin"
-                  width={24}
-                  height={24}
-                ></Image>
+              <Link href="https://www.facebook.com" target="_blank">
+                  <Image src={facebook} alt="facebook" />
+                </Link>
+                <Link href="https://twitter.com" target="_blank">
+                  <Image src={twitter} alt="twitter" />
+                </Link>
+                <Link href="https://www.linkedin.com" target="_blank">
+                  <Image src={linkedin} alt="linkedin" />
+                </Link>
               </div>
             </div>
           </div>

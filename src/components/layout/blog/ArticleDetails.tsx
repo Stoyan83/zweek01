@@ -1,11 +1,17 @@
 import Section from "@/components/ui/Section";
 import Image from "next/image";
 import detailsImage from "../../../../public/details.png";
+import detailsAuthor from "../../../../public/details-author.png";
+import facebook from "../../../../public/facebook.png";
+import twitter from "../../../../public/twitter.png";
+import linkedin from "../../../../public/linkedin.png";
+import shape from "../../../../public/details-shape.png";
+import Link from "next/link";
 
-const ArticleDetails = () => {
+const ArticleDetails = ({ article }: any) => {
   return (
     <Section fullWidth className="bg-white">
-      <div className="px-5 mx-auto">
+      <div className="px-5 mx-auto max-sm:pb-5 pb-48">
         <div className="flex flex-col items-center lg:pl-10 max-lg:flex-col max-lg:items-center">
           <div className="max-w-[822px] pt-28 flex flex-col">
             <div className="max-w-[750px]">
@@ -109,6 +115,30 @@ const ArticleDetails = () => {
                 molestiae consequatur, vel illum qui dolorem eum fugiat quo
                 voluptas nulla pariatur?"
               </p>
+              <div className="mt-4">
+
+              <div
+                className="flex flex-wrap items-center gap-y-[20px] py-[22px]  border-y-[1px] border-y-placeholder-grey"
+              >
+                <Image src={detailsAuthor} alt="person" />
+                <div className="ml-[18px]">
+                <p className="font-bold">{article.author}</p>
+                <p className="text-sm">{article.role}</p>
+              </div>
+              <div className="ml-auto flex items-center gap-[14px]">
+                <Link href="https://www.facebook.com" target="_blank">
+                  <Image src={facebook} alt="facebook" />
+                </Link>
+                <Link href="https://twitter.com" target="_blank">
+                  <Image src={twitter} alt="twitter" />
+                </Link>
+                <Link href="https://www.linkedin.com" target="_blank">
+                  <Image src={linkedin} alt="linkedin" />
+                </Link>
+                <Image src={shape} alt="shape" />
+              </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ function ArticlePage({
   return (
     <Main>
       <ShowArticle article={{ ...article, image: article.image.src }} />
-      <ArticleDetails />
+      <ArticleDetails article={article} />
       <RelatedArticle article={article}/>
     </Main>
   );
