@@ -6,10 +6,10 @@ import LogIn from "./LogIn";
 
 const links = [
   { id: 1, href: "/", text: "Product", style: "ml-0" },
-  { id: 2, href: "/pricing", text: "Pricing", style: "ml-4" },
-  { id: 3, href: "/company", text: "Company", style: "ml-2" },
-  { id: 4, href: "/blog", text: "Blog", style: "ml-2" },
-  { id: 5, href: "/contact", text: "Contact", style: "ml-2" },
+  { id: 2, href: "/pricing", text: "Pricing", style: "ml-0" },
+  { id: 3, href: "/company", text: "Company", style: "ml-0" },
+  { id: 4, href: "/blog", text: "Blog", style: "ml-0" },
+  { id: 5, href: "/contact", text: "Contact", style: "ml-0" },
 ];
 
 const NavBar = () => {
@@ -42,7 +42,7 @@ const NavBar = () => {
           ))}
         </nav>
       </div>
-      <div className="hidden lg:flex -mt-1 ml-[9.8rem] max-lg:flex-col max-lg:gap-9">
+      <div className="hidden lg:flex ml-[12rem] max-lg:flex-col max-lg:gap-9">
         <LogIn isOpen={isOpen} />
       </div>
       <div className="flex -mt-2 gap-2 max-lg:flex-col max-lg:gap-9 -mr-3 lg:hidden">
