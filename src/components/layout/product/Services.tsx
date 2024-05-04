@@ -10,7 +10,7 @@ const Services = () => {
         <Section
           key={index}
           fullWidth
-          className={`lg:pt-[8.1rem] max-sm:py-5 -mt-2 max-lg:py-[7.5rem] bg-white ${
+          className={`lg:pt-[8.1rem] max-sm:py-5 -mt-6 max-lg:py-[7.5rem] bg-white ${
             index === 2
               ? "pt-[8rem] pb-[7.35rem] max-sm:pb-2"
               : "pb-[-1.5rem] max-sm:pb-2"

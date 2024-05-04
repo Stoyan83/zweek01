@@ -20,7 +20,7 @@ export default function Home() {
         <Benefits />
       </Section>
       <Services />
-      <Section>
+      <Section className="mt-3">
         <Applications />
       </Section>
       <Section fullWidth className="bg-white">
@@ -32,7 +32,7 @@ export default function Home() {
       <Section fullWidth>
         <ClientsFeedback />
       </Section>
-      <AdvertiseBanner />
+      <AdvertiseBanner customClasses={"pb-10"}/>
     </Main>
   );
 }
