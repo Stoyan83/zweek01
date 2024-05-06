@@ -1,7 +1,7 @@
-export async function getPosts() {
+export async function getPosts(limit = 50) {
   try {
     let response = await fetch(
-      "https://jsonplaceholder.typicode.com/posts?_start=0&_limit=50"
+      `https://jsonplaceholder.typicode.com/posts?_start=0&_limit=${limit}`
     );
     let data = await response.json();
     return data;

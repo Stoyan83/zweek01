@@ -1,4 +1,4 @@
-import { prices } from "@/api-data/data";
+import { prices } from "@/static-data/data";
 import Button from "@/components/ui/Button";
 import Section from "@/components/ui/Section";
 import CheckIcon from "@/components/ui/icons/CheckIcon";

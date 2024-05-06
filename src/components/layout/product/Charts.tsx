@@ -1,4 +1,4 @@
-import { charts } from "@/api-data/data";
+import { charts } from "@/static-data/data";
 import Section from "@/components/ui/Section";
 import Image from "next/image";
 

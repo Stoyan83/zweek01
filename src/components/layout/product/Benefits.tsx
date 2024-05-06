@@ -1,5 +1,5 @@
 "use client";
-import { items } from "@/api-data/data";
+import { items } from "@/static-data/data";
 import Benefit from "./Benefit";
 import Section from "@/components/ui/Section";
 

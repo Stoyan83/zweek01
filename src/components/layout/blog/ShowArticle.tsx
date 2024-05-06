@@ -78,7 +78,7 @@ function ShowArticle() {
             width={945}
             height={511}
             alt="Show Article"
-            className="w-screen max-h-[511px]"
+            className="w-screen lg:max-h-[511px] lg:max-w-[945px]"
           />
         </div>
       </div>

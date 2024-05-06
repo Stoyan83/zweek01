@@ -4,7 +4,7 @@ import Button from "../../ui/Button";
 import Input from "../../ui/Input";
 import Image from "next/image";
 import LogoBar from "@/components/ui/LogoBar";
-import { logos } from "@/api-data/data";
+import { logos } from "@/static-data/data";
 import Section from "@/components/ui/Section";
 import Modal from "@/components/ui/Modal";
 

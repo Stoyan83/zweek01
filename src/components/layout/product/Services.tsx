@@ -1,4 +1,4 @@
-import { services } from "@/api-data/data";
+import { services } from "@/static-data/data";
 import Section from "@/components/ui/Section";
 import Service from "./Service";
 

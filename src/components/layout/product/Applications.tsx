@@ -1,5 +1,5 @@
 import React from "react";
-import { logoApps } from "@/api-data/data";
+import { logoApps } from "@/static-data/data";
 import Link from "next/link";
 import Image from "next/image";
 import Section from "@/components/ui/Section";
@@ -24,7 +24,9 @@ const Applications = () => {
                 alt="app logo"
                 width={120}
                 height={12}
-                className={`max-w-${index >= logoApps.length - 5 ? "[220px]" : "[200px]"} max-sm:max-w-[150px] w-max h-[120px] px-[2.69rem] py-[1.5rem] bg-white`}
+                className={`max-w-${
+                  index >= logoApps.length - 5 ? "[220px]" : "[200px]"
+                } max-sm:max-w-[150px] w-max h-[120px] px-[2.69rem] py-[1.5rem] bg-white`}
               />
             </div>
           ))}

@@ -1,21 +1,36 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import Section from "@/components/ui/Section";
 import SmallArticles from "./SmallArticles";
 import PostContext from "@/app/context/PostsContext";
 import { useSearchParams } from 'next/navigation';
-
+import Pagination from "@/components/ui/Pagination";
 
 
 const RelatedArticle = () => {
   const { posts } = useContext(PostContext);
+  const searchParams = useSearchParams();
+  const type = searchParams.get('type');
 
-  const searchParams = useSearchParams()
 
-  const type = searchParams.get('type')
+  const articlesPerPage = 3;
 
   const related = posts.filter((blog: any) => {
     return blog.type === type;
   });
+
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalPages = Math.ceil(related.length / articlesPerPage);
+
+
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = related.slice(indexOfFirstArticle, indexOfLastArticle);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   return (
     <Section fullWidth className="mb-10">
@@ -24,8 +39,15 @@ const RelatedArticle = () => {
           More from this topic
         </h2>
         <div className="mt-[1.5rem] flex flex-col gap-y-12 max-lg:gap-x-8 max-lg:mt-[3.12rem] max-lg:flex-col max-lg:items-center">
+          <div className="pt-10">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+            </div>
           <SmallArticles
-            smallArticles={related}
+            smallArticles={currentArticles}
             mbTp={"mb-[3.5rem]"}
             backGround={"bg-darkWhite"}
           />

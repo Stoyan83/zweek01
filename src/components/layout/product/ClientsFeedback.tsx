@@ -1,4 +1,4 @@
-import { feedback } from "@/api-data/data";
+import { feedback } from "@/static-data/data";
 import NextLink from "@/components/ui/NextLink";
 import Section from "@/components/ui/Section";
 import Image from "next/image";

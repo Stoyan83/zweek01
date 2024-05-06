@@ -52,7 +52,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
                   width={361}
                   height={241}
                   alt={blog.tytle}
-                  className="lg:max-w-[555px] lg:max-h-[370px]"
+                  className="lg:max-w-[555px] lg:max-h-[241px]"
                 />
               )}
               <h2
