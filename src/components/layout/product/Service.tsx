@@ -45,13 +45,13 @@ const Service = ({ item }: { item: any }) => (
     <div className="relative">
       <div className="absolute bottom-0 left-0 w-full">
         {item.id === 2 && (
-          <div className="mx-auto mb-4 lg:mb-8 lg:w-[450px] lg:h-[80px] bg-primary rounded-xl flex flex-col lg:flex-row items-center">
-            <p className="text-lg ml-2 font-bold lg:ml-4 lg:mr-4 tracking-[-0.25px] text-white whitespace-nowrap mb-2 lg:mb-0">
+          <div className="mx-auto mb-4 lg:mb-8 max-sm:h-[60x] sm:w-[450px] max-sm:w-[280px] lg:w-[450px] lg:h-[80px] bg-primary rounded-xl flex flex-col lg:flex-row items-center">
+            <p className="text-lg ml-2 font-bold max-sm:text-[16px] max-sm:pr-2 lg:ml-4 lg:mr-4 tracking-[-0.25px] text-white whitespace-nowrap mb-2 lg:mb-0">
               Automate your sales & marketing
             </p>
             <Button
               primary
-              className="px-4 py-[10px] lg:py-4 lg:ml-2 font-bold text-lg !bg-news-green hover:!bg-black rounded-lg"
+              className="px-4 py-[10px] max-sm:py-[5px] lg:py-4 lg:ml-2 font-bold text-lg !bg-news-green hover:!bg-black rounded-lg"
             >
               Start now
             </Button>

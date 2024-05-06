@@ -74,7 +74,7 @@ const NavBar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-14 left-0 bg-darkWhite h-screen w-full p-4 lg:hidden flex flex-col">
+        <div className="absolute max-sm:text-5xl max-sm:text-bold top-14 left-0 bg-darkWhite h-screen w-full p-4 lg:hidden flex flex-col items-center justify-start">
           {links.map((link) => (
             <div key={link.id} className="mb-2">
               <NavLink
@@ -88,7 +88,7 @@ const NavBar = () => {
               </NavLink>
             </div>
           ))}
-          <div className="-ml-1">
+          <div className="flex gap-6 max-sm:pt-6">
             <LogIn isOpen={isOpen} />
           </div>
         </div>

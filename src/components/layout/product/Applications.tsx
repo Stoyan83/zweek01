@@ -16,15 +16,15 @@ const Applications = () => {
           with hundreds of apps and integrations
         </p>
 
-        <div className="flex flex-wrap justify-center gap-2 mt-16 ">
-          {logoApps.map((logo) => (
+        <div className="flex flex-wrap max-w-[1000px] justify-center gap-2 mt-16 ">
+          {logoApps.map((logo, index) => (
             <div key={logo.id}>
               <Image
                 src={logo.image}
                 alt="app logo"
-                width={0}
-                height={0}
-                className="max-w-none w-max px-[2.69rem] py-[1.5rem] bg-white"
+                width={120}
+                height={12}
+                className={`max-w-${index >= logoApps.length - 5 ? "[220px]" : "[200px]"} max-sm:max-w-[150px] w-max h-[120px] px-[2.69rem] py-[1.5rem] bg-white`}
               />
             </div>
           ))}
