@@ -2,6 +2,7 @@
 import Section from "@/components/ui/Section";
 import React from "react";
 import Image from "next/image";
+import { useParams } from 'next/navigation'
 
 function ShowArticle({
   article,
@@ -15,6 +16,10 @@ function ShowArticle({
     author: string;
   };
 }) {
+
+  const params = useParams<{ articleId: string }>();
+  const  id  = params.articleId;
+
   return (
     <Section>
       <div className="flex flex-col flex-wrap items-center pt-10 px-5">

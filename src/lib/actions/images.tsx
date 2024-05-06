@@ -1,7 +1,7 @@
 export async function getImages() {
   try {
     let response = await fetch(
-      "http://jsonplaceholder.typicode.com/photos?_start=0&_limit=50"
+      "https://jsonplaceholder.typicode.com/photos?_start=0&_limit=50"
     );
     let data = await response.json();
     return data;
@@ -9,5 +9,19 @@ export async function getImages() {
     return {
       error: error.message,
     };
+  }
+}
+
+export async function getImage(id: number) {
+  try {
+    let response = await fetch(
+      `https://jsonplaceholder.typicode.com/photos/${id}`
+    );
+    let data = await response.json();
+    return data;
+  } catch (e) {
+    if (e instanceof Error) {
+      console.log(e.message);
+    }
   }
 }
