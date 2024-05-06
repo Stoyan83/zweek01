@@ -49,7 +49,8 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
                   loading="lazy"
                   width={361}
                   height={241}
-                  alt="image"
+                  alt={blog.tytle}
+                  className="max-h-[241px] max-w-[361px]"
                 />
               )}
               <h2

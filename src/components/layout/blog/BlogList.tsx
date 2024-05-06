@@ -3,11 +3,13 @@ import SmallArticles from "./SmallArticles";
 import MiddleArticle from "./MiddleArticle";
 
 const BlogList = ({ blogs }: any) => {
+  console.log(blogs);
+
   const bigArticle = blogs[0];
   const smallArticles = blogs.slice(1, 7);
   const midlleArticle = blogs[7];
   const midlleArticles = blogs.slice(8, 11);
-  const lastSmallArticles = blogs.slice(11, 14);
+  const lastSmallArticles = blogs.slice(11);
 
   return (
     <div>

@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import Section from "@/components/ui/Section";
 import Tabs from "@/components/ui/Tabs";
-import { articles } from "@/api-data/data";
+// import { articles } from "@/api-data/data";
 import BlogList from "./BlogList";
 import { getPosts } from "@/lib/actions/posts";
-import { getRandomDate, getRandomType } from "@/app/utils/helpers";
+import { getRandomDate, getRandomJobRole, getRandomType } from "@/app/utils/helpers";
 import { getImages } from "@/lib/actions/images";
 
 const Blog = () => {
@@ -18,11 +18,14 @@ const Blog = () => {
     { id: 6, title: "News" },
   ];
 
+  interface Post {
+    id: number;
+    type: string;
+  }
+
+
   const [activeTab, setActiveTab] = useState(tabs[0].id);
-  const [posts, setPosts] = useState([])
-
-  console.log(posts);
-
+  const [posts, setPosts] = useState<Post[]>([]);
 
   const handleTabChange = (tabId: number) => {
     setActiveTab(tabId);
@@ -32,7 +35,7 @@ const Blog = () => {
     .find((tab) => tab.id === activeTab)
     ?.title?.toLowerCase();
 
-  const blogs = articles.filter((blog) => {
+  const blogs = posts.filter((blog) => {
     if (activeTab === 1) {
       return blog;
     } else {
@@ -48,6 +51,7 @@ const Blog = () => {
           ...post,
           date: getRandomDate(),
           type: getRandomType(),
+          role: getRandomJobRole(),
           image: imagesData[index].url
         }));
 
