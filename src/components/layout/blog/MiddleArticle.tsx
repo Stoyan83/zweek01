@@ -19,7 +19,7 @@ const MiddleArticle = ({ midlleArticle }: any) => {
         alt={midlleArticle.title}
         width={555}
         height={370}
-        className="mt-10 max-h-[370px] max-w-[555px]"
+        className="mt-10 lg:max-h-[370px] lg:max-w-[555px]"
       />
       <h2 className="mt-5 font-bold text-[32.5px] tracking-[-0.44px] leading-[1.4]">
         {midlleArticle.title}

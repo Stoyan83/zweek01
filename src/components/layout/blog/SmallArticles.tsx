@@ -50,7 +50,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
                   width={361}
                   height={241}
                   alt={blog.tytle}
-                  className="max-h-[241px] max-w-[361px]"
+                  className="lg:max-w-[555px] lg:max-h-[370px]"
                 />
               )}
               <h2
@@ -62,7 +62,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
               >
                 {blog.title}
               </h2>
-              <div className="flex justify-between">
+              <div className="flex justify-between ">
                 <p className="pt-[1.3rem]">
                   {blog.date}
                   <span className="text-placeholder-grey">

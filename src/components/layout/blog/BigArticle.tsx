@@ -28,8 +28,8 @@ const BigArticle = ({ article }: any) => {
         </div>
       </div>
 
-      <div className="max-w-[555px] w-full">
-        <Image src={article?.image} width={555} height={370} alt={article?.title} className="max-h-[370px] max-w-[555px]"/>
+      <div className="lg:max-w-[555px] lg:max-h-[370px]">
+        <Image src={article?.image} width={555} height={370} alt={article?.title} className="lg:max-w-[555px] lg:max-h-[370px]" />
       </div>
     </div>
   );
