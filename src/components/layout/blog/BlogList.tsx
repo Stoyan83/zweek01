@@ -18,7 +18,7 @@ const BlogList = ({ blogs }: any) => {
 
   return (
     <div className="">
-      <div className="lg:-mt-20 lg:pb-20">
+      <div className="lg:-mt-20 lg:pb-20 max-sm:pb-12">
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
@@ -56,7 +56,7 @@ const BlogList = ({ blogs }: any) => {
         />
       </div>
 
-      <div className="pt-40">
+      <div className="pt-12">
 
       <Pagination
         currentPage={currentPage}
