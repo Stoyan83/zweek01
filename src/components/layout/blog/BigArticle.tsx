@@ -6,7 +6,7 @@ const BigArticle = ({ article }: any) => {
 
 
   const handleClick = () => {
-    router.push(`/blog/${article.id}`);
+    router.push(`/blog/${article.id}?type=${article.type}&date=${article.date}&author=${article.author}`);
   };
 
   return (

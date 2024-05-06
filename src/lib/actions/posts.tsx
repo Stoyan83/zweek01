@@ -12,7 +12,7 @@ export async function getPosts() {
   }
 }
 
-export async function getPost(id: number) {
+export async function getPost(id: string) {
   try {
     let response = await fetch(
       `https://jsonplaceholder.typicode.com/posts/${id}`

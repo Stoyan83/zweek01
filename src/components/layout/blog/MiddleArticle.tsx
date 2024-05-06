@@ -5,7 +5,7 @@ const MiddleArticle = ({ midlleArticle }: any) => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/blog/${midlleArticle.id}`);
+    router.push(`/blog/${midlleArticle.id}?type=${midlleArticle.type}&date=${midlleArticle.date}&author=${midlleArticle.author}`);
   };
 
   return (

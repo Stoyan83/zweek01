@@ -1,24 +1,52 @@
 'use client'
 import Section from "@/components/ui/Section";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { useParams } from 'next/navigation'
+import { useParams, useSearchParams  } from 'next/navigation';
+import { getPost } from "@/lib/actions/posts";
+import { getImage } from "@/lib/actions/images";
 
-function ShowArticle({
-  article,
-}: {
-  article: {
-    id: number;
-    title: string;
-    type: string;
-    image: string;
-    date: string;
-    author: string;
-  };
-}) {
+function ShowArticle() {
+  const [article, setArticle] = useState<any>(null);
 
-  const params = useParams<{ articleId: string }>();
-  const  id  = params.articleId;
+  const params = useParams<{ articleId: string, date: string  }>();
+  const searchParams = useSearchParams()
+
+  const type = searchParams.get('type')
+  const date = searchParams.get('date')
+  const author = searchParams.get('author')
+
+  const id = params.articleId;
+
+  useEffect(() => {
+    const fetchArticle = async () => {
+      try {
+        const [postData, imageData] = await Promise.all([
+          getPost(id),
+          getImage(id)
+        ]);
+
+        const processedArticle = {
+          ...postData,
+          date: date,
+          type: type,
+          author: author,
+          image: imageData.url
+        };
+
+        setArticle(processedArticle);
+      } catch (error) {
+        console.error("Error fetching article data:", error);
+      }
+    };
+
+    fetchArticle();
+
+  }, [id]);
+
+  if (!article) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <Section>

@@ -7,6 +7,7 @@ import BlogList from "./BlogList";
 import { getPosts } from "@/lib/actions/posts";
 import { getRandomDate, getRandomJobRole, getRandomType } from "@/app/utils/helpers";
 import { getImages } from "@/lib/actions/images";
+import { getUsers } from "@/lib/actions/users";
 
 const Blog = () => {
   const tabs = [
@@ -45,14 +46,15 @@ const Blog = () => {
 
 
   useEffect(() => {
-    Promise.all([getPosts(), getImages()])
-      .then(([postsData, imagesData]) => {
+    Promise.all([getPosts(), getImages(), getUsers()])
+      .then(([postsData, imagesData, userData]) => {
         const processedPosts = postsData.map((post: any, index: number) => ({
           ...post,
           date: getRandomDate(),
           type: getRandomType(),
           role: getRandomJobRole(),
-          image: imagesData[index].url
+          image: imagesData[index].url,
+          author: userData.find((user: any) => user.id === post.userId)?.name || "Unknown User"
         }));
 
         setPosts(processedPosts);
@@ -61,6 +63,7 @@ const Blog = () => {
         console.error("Error fetching data:", error);
       });
   }, []);
+
 
 
   return (

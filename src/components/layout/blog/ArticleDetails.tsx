@@ -1,3 +1,4 @@
+'use client'
 import Section from "@/components/ui/Section";
 import Image from "next/image";
 import detailsImage from "../../../../public/details.png";
@@ -7,8 +8,15 @@ import twitter from "../../../../public/twitter.png";
 import linkedin from "../../../../public/linkedin.png";
 import shape from "../../../../public/details-shape.png";
 import Link from "next/link";
+import { useParams, useSearchParams  } from 'next/navigation';
 
-const ArticleDetails = ({ article }: any) => {
+const ArticleDetails = () => {
+  const searchParams = useSearchParams()
+
+  const type = searchParams.get('type')
+  const date = searchParams.get('date')
+  const author = searchParams.get('author')
+
   return (
     <Section fullWidth className="bg-white">
       <div className="px-5 mx-auto max-sm:pb-5 pb-48">
@@ -122,8 +130,8 @@ const ArticleDetails = ({ article }: any) => {
               >
                 <Image src={detailsAuthor} alt="person" />
                 <div className="ml-[18px]">
-                <p className="font-bold">{article.author}</p>
-                <p className="text-sm">{article.role}</p>
+                <p className="font-bold">{author}</p>
+                <p className="text-sm">{author}</p>
               </div>
               <div className="ml-auto flex items-center gap-[14px]">
                 <Link href="https://www.facebook.com" target="_blank">

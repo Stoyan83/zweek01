@@ -4,8 +4,12 @@ import Image from "next/image";
 const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
   const router = useRouter();
 
-  const handleClick = (id: number) => {
-    router.push(`/blog/${id}`);
+  console.log(smallArticles);
+
+
+  const handleClick = (id: number, author: string, date: string, type: string) => {
+    router.push(`/blog/${id}?type=${type}&date=${date}&author=${author}`);
+
   };
 
   return (
@@ -22,7 +26,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
           className={`${mbTp} ${
             layout === "vertical" ? "" : "md:w-1/2 lg:w-1/3"
           }`}
-          onClick={() => handleClick(blog.id)}
+          onClick={() => handleClick(blog.id, blog.author, blog.date, blog.type)}
           style={{ cursor: "pointer" }}
         >
           <div>

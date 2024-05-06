@@ -12,7 +12,7 @@ export async function getImages() {
   }
 }
 
-export async function getImage(id: number) {
+export async function getImage(id: string) {
   try {
     let response = await fetch(
       `https://jsonplaceholder.typicode.com/photos/${id}`
