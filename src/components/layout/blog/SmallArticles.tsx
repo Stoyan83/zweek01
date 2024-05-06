@@ -1,11 +1,9 @@
+'use client'
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
   const router = useRouter();
-
-  console.log(smallArticles);
-
 
   const handleClick = (id: number, author: string, date: string, type: string) => {
     router.push(`/blog/${id}?type=${type}&date=${date}&author=${author}`);

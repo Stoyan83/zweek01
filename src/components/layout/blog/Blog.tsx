@@ -1,13 +1,12 @@
-"use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Section from "@/components/ui/Section";
 import Tabs from "@/components/ui/Tabs";
-// import { articles } from "@/api-data/data";
 import BlogList from "./BlogList";
 import { getPosts } from "@/lib/actions/posts";
 import { getRandomDate, getRandomJobRole, getRandomType } from "@/app/utils/helpers";
 import { getImages } from "@/lib/actions/images";
 import { getUsers } from "@/lib/actions/users";
+import PostContext from "@/app/context/PostsContext";
 
 const Blog = () => {
   const tabs = [
@@ -28,13 +27,13 @@ const Blog = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const [posts, setPosts] = useState<Post[]>([]);
 
+  const { setPosts: setPostsContext } = useContext(PostContext);
+
   const handleTabChange = (tabId: number) => {
     setActiveTab(tabId);
   };
 
-  const activeTabTitle = tabs
-    .find((tab) => tab.id === activeTab)
-    ?.title?.toLowerCase();
+  const activeTabTitle = tabs.find((tab) => tab.id === activeTab)?.title?.toLowerCase();
 
   const blogs = posts.filter((blog) => {
     if (activeTab === 1) {
@@ -43,7 +42,6 @@ const Blog = () => {
       return blog.type === activeTabTitle;
     }
   });
-
 
   useEffect(() => {
     Promise.all([getPosts(), getImages(), getUsers()])
@@ -58,13 +56,12 @@ const Blog = () => {
         }));
 
         setPosts(processedPosts);
+        setPostsContext(processedPosts);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   }, []);
-
-
 
   return (
     <>

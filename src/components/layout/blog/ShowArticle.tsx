@@ -9,7 +9,7 @@ import { getImage } from "@/lib/actions/images";
 function ShowArticle() {
   const [article, setArticle] = useState<any>(null);
 
-  const params = useParams<{ articleId: string, date: string  }>();
+  const params = useParams<{ articleId: string  }>();
   const searchParams = useSearchParams()
 
   const type = searchParams.get('type')

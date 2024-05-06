@@ -1,10 +1,20 @@
+import React, { useContext } from "react";
 import Section from "@/components/ui/Section";
 import SmallArticles from "./SmallArticles";
-import { articles } from "@/api-data/data";
+import PostContext from "@/app/context/PostsContext";
+import { useSearchParams } from 'next/navigation';
 
-const RelatedArticle = ({ article }: any) => {
-  const related = articles.filter((blog) => {
-    return blog.type === article.type;
+
+
+const RelatedArticle = () => {
+  const { posts } = useContext(PostContext);
+
+  const searchParams = useSearchParams()
+
+  const type = searchParams.get('type')
+
+  const related = posts.filter((blog: any) => {
+    return blog.type === type;
   });
 
   return (
