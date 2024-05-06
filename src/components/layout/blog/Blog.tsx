@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Section from "@/components/ui/Section";
 import Tabs from "@/components/ui/Tabs";
 import { articles } from "@/api-data/data";
 import BlogList from "./BlogList";
+import { getPosts } from "@/lib/actions/posts";
+import { getRandomDate, getRandomType } from "@/app/utils/helpers";
+import { getImages } from "@/lib/actions/images";
 
 const Blog = () => {
   const tabs = [
@@ -16,6 +19,10 @@ const Blog = () => {
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+  const [posts, setPosts] = useState([])
+
+  console.log(posts);
+
 
   const handleTabChange = (tabId: number) => {
     setActiveTab(tabId);
@@ -32,6 +39,25 @@ const Blog = () => {
       return blog.type === activeTabTitle;
     }
   });
+
+
+  useEffect(() => {
+    Promise.all([getPosts(), getImages()])
+      .then(([postsData, imagesData]) => {
+        const processedPosts = postsData.map((post: any, index: number) => ({
+          ...post,
+          date: getRandomDate(),
+          type: getRandomType(),
+          image: imagesData[index].url
+        }));
+
+        setPosts(processedPosts);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
 
   return (
     <>
