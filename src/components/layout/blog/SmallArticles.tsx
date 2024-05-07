@@ -15,7 +15,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
       className={`${backGround} ${
         layout === "vertical"
           ? "flex flex-col lg:w-[555px] mt-4 -mb-20"
-          : "mt-[3.2rem] flex flex-wrap"
+          : "mt-[3.2rem] flex flex-wrap max-sm:justify-center"
       }`}
     >
       {smallArticles.map((blog: any) => (
@@ -64,7 +64,7 @@ const SmallArticles = ({ smallArticles, layout, mbTp, backGround }: any) => {
               >
                 {blog.title}
               </h2>
-              <div className="flex justify-between ">
+              <div className="flex justify-between max-sm:justify-center">
                 <p className="pt-[1.3rem]">
                   {blog.date}
                   <span className="text-placeholder-grey">

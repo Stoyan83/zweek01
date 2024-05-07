@@ -88,7 +88,7 @@ const NavBar = () => {
               </NavLink>
             </div>
           ))}
-          <div className="flex gap-6 max-sm:pt-6">
+          <div className="flex gap-8 flex-col max-sm:pt-6">
             <LogIn isOpen={isOpen} />
           </div>
         </div>

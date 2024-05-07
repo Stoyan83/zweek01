@@ -13,8 +13,6 @@ import { useParams, useSearchParams  } from 'next/navigation';
 const ArticleDetails = () => {
   const searchParams = useSearchParams()
 
-  const type = searchParams.get('type')
-  const date = searchParams.get('date')
   const author = searchParams.get('author')
 
   return (
@@ -131,7 +129,7 @@ const ArticleDetails = () => {
                 <Image src={detailsAuthor} alt="person" />
                 <div className="ml-[18px]">
                 <p className="font-bold">{author}</p>
-                <p className="text-sm">{author}</p>
+                <p className="text-sm">Founder & CEO</p>
               </div>
               <div className="ml-auto flex items-center gap-[14px]">
                 <Link href="https://www.facebook.com" target="_blank">

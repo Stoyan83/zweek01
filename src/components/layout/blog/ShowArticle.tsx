@@ -56,7 +56,7 @@ function ShowArticle() {
             <p className="mt-8 font-bold uppercase max-sm:text-xs text-[14px] text-placeholder-grey tracking-[1.4px]">
               {article.type}
             </p>
-            <div className="mt-[6px] h-[1px] bg-placeholder-grey"></div>
+            <div className="mt-[6px] lg:min-w-[750px] h-[1px] bg-placeholder-grey"></div>
 
             <h2 className="max-w-[865px] pt-[22px] font-bold leading-[1.2] max-sm:text-lg text-5xl tracking-[-0.67px]">
               {article.title}
@@ -71,7 +71,7 @@ function ShowArticle() {
             </div>
           </div>
         </div>
-        <div className="max-w-[945px]  mt-5 mx-auto overflow-hidden">
+        <div className="lg:max-w-[945px] mt-5 mx-auto overflow-hidden">
           <Image
             src={article.image}
             loading="lazy"

@@ -9,8 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Roooby",
-  description: "Learning Next.js",
+  description: "Discover Roooby, your go-to solution for powerful link building to acquire and engage customers. Elevate your business revenue with our enterprise-grade tools and strategies. Learn Next.js with Roooby today!",
+  metadataBase: new URL('https://second-project-stoyan.vercel.app/'),
 };
+
 
 export default function RootLayout({
   children,

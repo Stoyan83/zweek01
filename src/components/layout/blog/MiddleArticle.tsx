@@ -24,7 +24,7 @@ const MiddleArticle = ({ midlleArticle }: any) => {
       <h2 className="mt-5 font-bold text-[32.5px] tracking-[-0.44px] leading-[1.4]">
         {midlleArticle.title}
       </h2>
-      <div className="mt-[18px] flex font-medium">
+      <div className="max-sm:justify-center mt-[18px] flex font-medium">
         <p>{midlleArticle.date},</p>
         <p className="text-placeholder-grey ">&nbsp;by {midlleArticle.author}</p>
       </div>

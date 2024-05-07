@@ -14,7 +14,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
   };
 
   return (
-    <div className="flex justify-center"> 
+    <div className="flex justify-center">
       <nav>
         <ul className="flex items-center -space-x-px h-8 text-sm">
           <li>
@@ -34,8 +34,8 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
           {Array.from({ length: totalPages }, (_, i) => (
             <li key={i}>
               <button
-                className={`flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white ${
-                  currentPage === i + 1 ? "bg-blue-50 text-blue-600 border-blue-300 hover:bg-blue-100 hover:text-blue-700" : ""
+                className={`flex items-center justify-center px-3 h-8 leading-tight text-pricing-gray border border-gray-300 hover:bg-pricing-gray hover:text-gray-700 ${
+                  currentPage === i + 1 ? " bg-gray-600 text-white" : "bg-white text-gray-800"
                 }`}
                 onClick={() => handlePageChange(i + 1)}
               >

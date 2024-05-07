@@ -18,7 +18,7 @@ const BigArticle = ({ article }: any) => {
         <h2 className="mt-[13px] font-bold text-[40px] leading-[1.2] tracking-[-0.56px] max-lg:text-[32px]">
           {article?.title}
         </h2>
-        <div className="flex pt-10 mb-4 mt-auto font-medium">
+        <div className="flex pt-10 mb-4 mt-auto  max-sm:justify-center font-medium">
           <p>
             {article?.date}
             <span className="text-placeholder-grey">
